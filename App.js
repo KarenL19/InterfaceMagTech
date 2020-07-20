@@ -1,26 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, Image} from 'react-native';
-import Estilizacao from './src/styles/stylesDefault'
+
+// Import src components
+import { View } from 'react-native';
+import Header from './src/components/Header';
+import Routes from './src/routes';
+import Footer from './src/components/Footer';
 
 export default function App() {
   return (
-    <View style={Estilizacao.container}>
-      <StatusBar style="auto" />
-      <View style={Estilizacao.headerFooter}>
-      </View>
-      <View style={Estilizacao.body}>
-        <Image style={Estilizacao.image} 
-        source={          
-          require("./src/assets/log_3.png")
-        } 
-        />
-        <Text style={{fontSize:20,paddingBottom:120}}>Seja um Doador de Órgãos!!</Text>
-      </View>
-      <View style={Estilizacao.headerFooter}>
-      </View>
+    <View style={{ height: '100%' }}>
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      <Header />
+      <Routes />
+      <Footer />
     </View>
   );
 }
-
-

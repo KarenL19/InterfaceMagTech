@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 
 // Import src components
 import { View } from 'react-native';

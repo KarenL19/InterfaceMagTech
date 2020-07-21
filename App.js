@@ -1,26 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, Image} from 'react-native';
-import Estilizacao from './src/styles/stylesDefault'
+import Tela1 from './src/pages/telasIniciais/primeiraTela/primeiraTela';
+import Tela2 from './src/pages/telasIniciais/segundaTela/segundaTela';
+import DetalheScroll from './src/styles/stylesDefault'
+import ScrollView from 'react-native';
+
 
 export default function App() {
   return (
-    <View style={Estilizacao.container}>
+    <>
+    <ScrollView> 
       <StatusBar style="auto" />
-      <View style={Estilizacao.headerFooter}>
-      </View>
-      <View style={Estilizacao.body}>
-        <Image style={Estilizacao.image} 
-        source={          
-          require("./src/assets/log_3.png")
-        } 
-        />
-        <Text style={{fontSize:20,paddingBottom:120}}>Seja um Doador de Órgãos!!</Text>
-      </View>
-      <View style={Estilizacao.headerFooter}>
-      </View>
-    </View>
+      <Tela1 />
+      <Tela2 />
+    </ ScrollView>
+      
+    </>
+
   );
 }
-
-

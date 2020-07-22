@@ -11,7 +11,7 @@ export default class PrimeiraTela extends Component {
           <Image
             style={Estilizacao.image}
             source={
-            require()
+            require('../../../assets/log_3.png')
           }
           />
           <Text style={{ fontSize: 20, paddingBottom: 120 }}>Seja um Doador de Órgãos!!</Text>

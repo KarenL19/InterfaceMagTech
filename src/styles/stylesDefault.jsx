@@ -26,15 +26,10 @@ export default StyleSheet.create({
     width: 250
   },
 
-  ScrollView: {
-    horizontal = true,
-    showsHorizontalScrollIndicator = true,
-    scrollEventThrottle = 200,
-    decelerationRate = "rápido",
-    pagingEnabled,
-    contentContainerStyle = {width: `$ {100 * intervalos}%`}
+  
 
-  }
+   
+
   
 
 

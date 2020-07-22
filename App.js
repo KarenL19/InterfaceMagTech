@@ -3,19 +3,25 @@ import React from 'react';
 import Tela1 from './src/pages/telasIniciais/primeiraTela/primeiraTela';
 import Tela2 from './src/pages/telasIniciais/segundaTela/segundaTela';
 import DetalheScroll from './src/styles/stylesDefault'
-import ScrollView from 'react-native';
+import {ScrollView} from 'react-native';
+
 
 
 export default function App() {
   return (
-    <>
-    <ScrollView> 
+    
+    
+      <ScrollView horizontal = {true}> 
+      
       <StatusBar style="auto" />
       <Tela1 />
       <Tela2 />
-    </ ScrollView>
       
-    </>
+    </ScrollView>
+    
+    
+      
+    
 
   );
 }

@@ -3,8 +3,14 @@ import {
   View, Text, StyleSheet, Image,
 } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
+import { RectButton } from 'react-native-gesture-handler';
 
 export default class UltimaTela extends Component {
+  handleNavigationToLogin() {
+    const { navigation } = this.props;
+    navigation.navigate('Login');
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -17,13 +23,19 @@ export default class UltimaTela extends Component {
             style={styles.image}
           />
           <Text style={[styles.title, styles.nextPageText]}>{'Entre ou \n cadastre-se já'}</Text>
-          <View style={styles.arrowIcon}>
-            <Icon
-              name="arrow-right"
-              color="#696969"
-              size={60}
-            />
-          </View>
+          <RectButton
+            style={styles.arrowIcon}
+            activeOpacity={0}
+            onPress={() => this.handleNavigationToLogin()}
+          >
+            <View>
+              <Icon
+                name="arrow-right"
+                color="#696969"
+                size={60}
+              />
+            </View>
+          </RectButton>
         </View>
       </View>
     );

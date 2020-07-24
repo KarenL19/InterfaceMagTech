@@ -4,6 +4,8 @@ import {
 } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
+import logo from '../../../assets/logo.png';
+import celular from '../../../assets/celular.png';
 
 export default class UltimaTela extends Component {
   handleNavigationToLogin() {
@@ -14,14 +16,11 @@ export default class UltimaTela extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('../../../assets/log_3.png')} />
+        <Image source={logo} />
         <Text style={styles.title}>Nossa Rede Social</Text>
         <Text style={styles.bodyText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis augue risus. Morbi non aliquet turpis. Nullam quis condimentum massa, quis finibus sem.</Text>
         <View style={styles.nextPageView}>
-          <Image
-            source={require('../../../assets/celular.png')}
-            style={styles.image}
-          />
+          <Image source={celular} style={styles.image} />
           <Text style={[styles.title, styles.nextPageText]}>{'Entre ou \n cadastre-se já'}</Text>
           <RectButton
             style={styles.arrowIcon}

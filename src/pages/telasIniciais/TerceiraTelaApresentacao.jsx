@@ -18,14 +18,14 @@ export default function TerceiraTelaApresentação(){
           } 
           />
         
-        <Text style={{fontSize:20,paddingBottom:80,paddingTop:60}}>Sobre Doação de Órgãos</Text>
-          <Text style={{fontSize:13,marginBottom:200, marginTop:-50}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <Text style={Estilizacao.tituloTerceiraTelaApresentacao}>Sobre Doação de Órgãos</Text>
+          <Text style={Estilizacao.textoTerceiraTelaApresentacao}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
            Donec vulputate lacinia mauris, quis rutrum risus sagittis eget.</Text>
 
 
                   
-        <Image style={Estilizacao.image}  
+        <Image style={Estilizacao.image2}  
           source={          
             require("../../assets/terceiraTela.png")
           } 

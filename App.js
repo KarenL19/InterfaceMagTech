@@ -8,7 +8,7 @@ import QuintaTelaApresentacao from './src/pages/telasIniciais/QuintaTelaApresent
 export default function App() {
   return (
     <>
-      <QuintaTelaApresentacao/>
+      <TerceiraTelaApresentacao/>
     </>
   );
 }

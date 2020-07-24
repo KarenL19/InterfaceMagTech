@@ -22,6 +22,13 @@ export default StyleSheet.create({
       width: 300,
       marginTop: 30
       
-    } 
+    } ,
+    /*image2: {
+      height: 100,
+      width: 300,
+      justifyContent: "space-between",
+
+    } */
+    
     
   });

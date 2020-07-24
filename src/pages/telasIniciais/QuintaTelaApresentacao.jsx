@@ -3,7 +3,7 @@ import {StatusBar,Text, View, Image} from 'react-native';
 import Estilizacao from '../../styles/stylesDefault';
 
 
-export default function TerceiraTelaApresentação(){
+export default function QuintaTelaApresentacao(){
     return(   
         
         <View style={Estilizacao.container}>
@@ -18,20 +18,18 @@ export default function TerceiraTelaApresentação(){
           } 
           />
         
-        <Text style={{fontSize:20,paddingBottom:80,paddingTop:60}}>Sobre Doação de Órgãos</Text>
-          <Text style={{fontSize:13,marginBottom:200, marginTop:-50}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <Text style={{fontSize:20,paddingBottom:30}}>Sobre Doação de Órgãos</Text>
+
+        <Image style={Estilizacao.image} 
+          source={          
+            require("../../assets/quintaTela.png")
+          } 
+          />            
+
+          <Text style={{fontSize:13,marginBottom:90}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
            Donec vulputate lacinia mauris, quis rutrum risus sagittis eget.</Text>
-
-
-                  
-        <Image style={Estilizacao.image}  
-          source={          
-            require("../../assets/terceiraTela.png")
-          } 
-          />  
-          
-          
+  
         </View>
         <View style={Estilizacao.headerFooter}>
         </View>

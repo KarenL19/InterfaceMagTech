@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import {
-  Text, StyleSheet, View, Image, TextInput, CheckBox,
+  Text, StyleSheet, View, Image, TextInput,
 } from 'react-native';
-import { RectButton, TouchableOpacity } from 'react-native-gesture-handler';
+import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 
 export default class Login extends Component {
+  state = {
+    switchValue: false
+  };
+
   handleNavigationToCadastro() {
     const { navigation } = this.props;
     navigation.navigate('Cadastro');
   }
+
+  toggleSwitch = value => {
+    this.setState({ switchValue: value });
+  };
 
   render() {
     return (
@@ -34,8 +42,25 @@ export default class Login extends Component {
               placeholderTextColor="#000"
             />
           </View>
-          <CheckBox style={styles.checkbox} />
-          <Text>Sou um(a) profissional da saúde</Text>
+          <View style={styles.viewCheckbox}>
+            <Switch
+              style={{ margin: 10 }}
+              onValueChange={this.toggleSwitch}
+              value={this.state.switchValue}
+            />
+            <Text style={{ marginTop: 18 }}>Sou um(a) profissional da saúde</Text>
+          </View>
+          {
+            this.state.switchValue ? 
+              <View style={styles.viewInput}>
+                <TextInput
+                  placeholder="Registro"
+                  style={[styles.input, styles.switchInput]}
+                  placeholderTextColor="#000"
+                />
+              </View>
+              : <></>
+          }
         </View>
 
         <RectButton style={styles.logarButton}>
@@ -77,7 +102,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 25,
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: 10,
     backgroundColor: '#E6A9A9',
   },
   viewInput: {
@@ -93,9 +118,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#E6A9A9',
     marginBottom: 5,
   },
-  checkbox: {
-    height: 20,
-    width: 20,
+  viewCheckbox: {
+    flexDirection: 'row',
     margin: 10,
   },
+  switchInput: {
+    marginTop: 0,
+  }
 });

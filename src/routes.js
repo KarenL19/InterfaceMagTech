@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 // Import Pages
 import UltimaTela from './pages/TelasIniciais/UltimaTela';
 import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 
 const AppStack = createStackNavigator();
 
@@ -17,6 +18,7 @@ export default class Routes extends Component {
         >
           <AppStack.Screen name="UltimaTela" component={UltimaTela} />
           <AppStack.Screen name="Login" component={Login} />
+          <AppStack.Screen name="Cadastro" component={Cadastro} />
         </AppStack.Navigator>
       </NavigationContainer>
     );

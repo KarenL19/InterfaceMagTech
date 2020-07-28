@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {
-  Text, StyleSheet, View, Image, TextInput,
+  Text, StyleSheet, View, Image, TextInput, KeyboardAvoidingView,
 } from 'react-native';
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 export default class Login extends Component {
   state = {
-    switchValue: false
+    switchValue: false,
+
   };
 
   handleNavigationToCadastro() {
@@ -20,7 +22,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <View style={styles.body}>
+      <KeyboardAwareScrollView contentContainerStyle={styles.body}>
         <Image
           source={require('../../assets/logo2.png')}
           style={styles.image}
@@ -41,26 +43,26 @@ export default class Login extends Component {
               style={styles.input}
               placeholderTextColor="#000"
             />
-          </View>
           <View style={styles.viewCheckbox}>
             <Switch
               style={{ margin: 10 }}
               onValueChange={this.toggleSwitch}
               value={this.state.switchValue}
-            />
+              />
             <Text style={{ marginTop: 18 }}>Sou um(a) profissional da saúde</Text>
           </View>
           {
             this.state.switchValue ? 
-              <View style={styles.viewInput}>
+            <View style={styles.viewInput}>
                 <TextInput
                   placeholder="Registro"
                   style={[styles.input, styles.switchInput]}
                   placeholderTextColor="#000"
-                />
+                  />
               </View>
               : <></>
-          }
+            }
+            </View>
         </View>
 
         <RectButton style={styles.logarButton}>
@@ -69,7 +71,7 @@ export default class Login extends Component {
         <TouchableOpacity onPress={() => this.handleNavigationToCadastro()}>
           <Text>Ainda não possui cadastro?</Text>
         </TouchableOpacity>
-      </View>
+      </KeyboardAwareScrollView>
     );
   }
 }
@@ -81,7 +83,7 @@ const styles = StyleSheet.create({
   body: {
     backgroundColor: '#d6d6d6',
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center"
   },
   box: {
     height: 300,

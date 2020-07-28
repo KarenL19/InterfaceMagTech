@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Text, StyleSheet, View, Image, TextInput, KeyboardAvoidingView,
+  Text, StyleSheet, View, Image, TextInput
 } from 'react-native';
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -8,7 +8,6 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 export default class Login extends Component {
   state = {
     switchValue: false,
-
   };
 
   handleNavigationToCadastro() {
@@ -96,7 +95,7 @@ const styles = StyleSheet.create({
     height: 125,
   },
   loginIcon: {
-    marginTop: 20,
+    marginTop: 10,
   },
   input: {
     height: 40,
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
   logarButton: {
     borderWidth: 1,
     borderRadius: 25,
-    padding: 20,
+    padding: 10,
     width: 200,
     alignItems: 'center',
     marginTop: 20,

@@ -18,7 +18,7 @@ export default StyleSheet.create({
       flex:1
     },
     image: {
-      height: 100,
+       height: 100,
       width: 300,
       marginTop: 30
       
@@ -39,10 +39,21 @@ export default StyleSheet.create({
 
       textoTerceiraTelaApresentacao:{
       fontSize:13,
-      //marginBottom:200,
       paddingBottom: 50, 
-      //marginTop:-50
-    }
+    },
+     imagemPerfil:{
+      height: 50,
+      width: 50,
+      borderWidth: 1,
+      borderRadius: 50,
+      borderColor: 'black',
+      //alignItems: "center",
+      margin: 30,
+      backgroundColor: 'white'    
+     }
+    
+
+
     
     
   });

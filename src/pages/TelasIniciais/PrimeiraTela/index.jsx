@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
 import { Text, View, Image } from 'react-native';
+import React, { Component } from './node_modules/react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent'
+import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
 
 export default class PrimeiraTela extends Component {
   render() {
@@ -21,9 +21,10 @@ export default class PrimeiraTela extends Component {
             require('../../../assets/flor.png')
           }
           />
-          <Text style={{ fontSize: 20, position: 'relative', top:'10%' }}
-          >Seja um Doador de Órgãos!!</Text>
-           
+          <Text style={{ fontSize: 20, position: 'relative', top: '10%' }}>
+            Seja um Doador de Órgãos!!
+          </Text>
+
         </View>
         <View style={EstilizacaoPadrao.headerFooter} />
       </View>

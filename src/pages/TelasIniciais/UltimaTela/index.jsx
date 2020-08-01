@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
 import {
   View, Text, StyleSheet, Image,
 } from 'react-native';
-import { Feather as Icon } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
+import React, { Component } from './node_modules/react';
+import { Feather as Icon } from './node_modules/@expo/vector-icons';
 import logo from '../../../assets/logo.png';
 import celular from '../../../assets/celular.png';
 

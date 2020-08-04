@@ -1,6 +1,8 @@
-import { Text, View, Image, StyleSheet } from 'react-native';
+import {
+  Text, View, Image, StyleSheet,
+} from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
+import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
 
 export default class UltimaTela extends Component {
@@ -26,7 +28,7 @@ export default class UltimaTela extends Component {
             <Image
               style={EstilizacaoDiferenciada.imageLupa}
               source={
-                        require('../../assets/pesquisa2.png')
+                        require('../../../assets/icons/pesquisa2.png')
                         }
             />
           </View>
@@ -38,10 +40,10 @@ export default class UltimaTela extends Component {
 }
 
 const style = StyleSheet.create({
-  mainTitle:{
+  mainTitle: {
     fontSize: 20,
     fontStyle: 'normal',
     position: 'relative',
     bottom: '7%',
-  }
-})
+  },
+});

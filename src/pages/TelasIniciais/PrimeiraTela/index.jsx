@@ -2,7 +2,7 @@ import {
   Text, View, Image, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
+import EstilizacaoPadrao from '../../../assets/styles/global';
 
 export default class PrimeiraTela extends Component {
   render() {
@@ -13,13 +13,13 @@ export default class PrimeiraTela extends Component {
           <Image
             style={styles.imageLogoPag1}
             source={
-            require('../../../assets/log_3.png')
+            require('../../../assets/images/logo.png')
           }
           />
           <Image
             style={styles.imageFlorTela1}
             source={
-            require('../../../assets/flor.png')
+            require('../../../assets/images/flor.png')
           }
           />
           <Text style={styles.mainTitle}>

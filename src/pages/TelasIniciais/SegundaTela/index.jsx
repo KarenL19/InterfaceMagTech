@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Text, View, Image, StyleSheet,
 } from 'react-native';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
+import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class SegundaTela extends Component {
@@ -14,7 +14,7 @@ export default class SegundaTela extends Component {
           <Image
             style={EstilizacaoPadraoInicial.imageLogo}
             source={
-            require('../../../assets/log_3.png')
+            require('../../../assets/images/logo.png')
           }
           />
           <Text style={{ fontSize: 20, paddingTop: 10 }}>
@@ -26,13 +26,13 @@ export default class SegundaTela extends Component {
           <Image
             style={style.imageFlor}
             source={
-            require('../../../assets/flor.png')
+            require('../../../assets/images/flor.png')
           }
           />
           <Image
             style={style.imagePontosInterrog}
             source={
-            require('../../../assets/pontoInterrog.png')
+            require('../../../assets/images/pontoInterrog.png')
           }
           />
 

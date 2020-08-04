@@ -1,9 +1,15 @@
-import { Text, View, Image, StyleSheet } from 'react-native';
+import {
+    StatusBar, Text, View, Image, StyleSheet,
+  } from 'react-native';
+  import React, { Component } from 'react';
+  import Estilizacao from '../../../styles/stylesDefault';
+
+  import { Text, View, Image } from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
 import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
 
-export default class UltimaTela extends Component {
+export default class PrimeiraTela extends Component {
   render() {
     return (
       <View style={EstilizacaoPadrao.container}>
@@ -16,7 +22,7 @@ export default class UltimaTela extends Component {
             style.mainTitle
           }
           >
-            Mensagem
+            COFIGURAÇÕES GERAIS
           </Text>
 
         </View>
@@ -38,10 +44,10 @@ export default class UltimaTela extends Component {
 }
 
 const style = StyleSheet.create({
-  mainTitle:{
-    fontSize: 20,
-    fontStyle: 'normal',
-    position: 'relative',
-    bottom: '7%',
-  }
-})
+    mainTitle:{
+        fontSize: 20,
+        fontStyle: 'normal',
+        position: 'relative',
+        bottom: '7%'
+    }
+});

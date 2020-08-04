@@ -1,7 +1,8 @@
-import { Text, View, Image } from 'react-native';
-import React, { Component } from './node_modules/react';
+import {
+  Text, View, Image, StyleSheet,
+} from 'react-native';
+import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
 
 export default class PrimeiraTela extends Component {
   render() {
@@ -10,18 +11,18 @@ export default class PrimeiraTela extends Component {
         <View style={EstilizacaoPadrao.headerFooter} />
         <View style={EstilizacaoPadrao.body}>
           <Image
-            style={EstilizacaoDiferenciada.imageLogoPag1}
+            style={styles.imageLogoPag1}
             source={
             require('../../../assets/log_3.png')
           }
           />
           <Image
-            style={EstilizacaoDiferenciada.imageFlorTela1}
+            style={styles.imageFlorTela1}
             source={
             require('../../../assets/flor.png')
           }
           />
-          <Text style={{ fontSize: 20, position: 'relative', top: '10%' }}>
+          <Text style={styles.mainTitle}>
             Seja um Doador de Órgãos!!
           </Text>
 
@@ -31,3 +32,25 @@ export default class PrimeiraTela extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+  imageLogoPag1: {
+    height: 200,
+    width: 400,
+    position: 'relative',
+    top: '20%',
+  },
+  imageFlorTela1: {
+    height: 80,
+    width: 80,
+    position: 'relative',
+    top: '45%',
+    left: '37%',
+
+  },
+  mainTitle: {
+    fontSize: 20,
+    position: 'relative',
+    top: '10%',
+  },
+
+});

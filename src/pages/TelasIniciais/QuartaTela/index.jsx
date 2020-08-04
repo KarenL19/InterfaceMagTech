@@ -1,9 +1,9 @@
 import {
-  Text, View, Image, Dimensions,
+  Text, View, Image, StyleSheet,
 } from 'react-native';
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class QuartaTela extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class QuartaTela extends Component {
         <View style={EstilizacaoPadrao.headerFooter} />
         <View style={EstilizacaoPadrao.body}>
           <Image
-            style={EstilizacaoDiferenciada.imageLogoPag23456}
+            style={EstilizacaoPadraoInicial.imageLogo}
             source={
                         require('../../../assets/log_3.png')
                          }
@@ -21,13 +21,13 @@ export default class QuartaTela extends Component {
             Alguns dados
           </Text>
           <Image
-            style={EstilizacaoDiferenciada.imageFlorTela4}
+            style={style.imageFlor}
             source={
                         require('../../../assets/flor.png')
                         }
           />
           <Image
-            style={EstilizacaoDiferenciada.imageBarras}
+            style={style.imageBarras}
             source={
                         require('../../../assets/graficoBarras.png')
                         }
@@ -46,3 +46,20 @@ export default class QuartaTela extends Component {
     );
   }
 }
+const style = StyleSheet.create({
+  imageFlor: {
+    height: 80,
+    width: 80,
+    position: 'relative',
+    top: '48%',
+    left: '38%',
+
+  },
+  imageBarras: {
+    height: 200,
+    width: 300,
+    bottom: '17%',
+
+  },
+
+});

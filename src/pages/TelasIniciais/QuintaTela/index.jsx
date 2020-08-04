@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import {
-  StatusBar, Text, View, Image,
+  StatusBar, Text, View, Image,StyleSheet
 } from 'react-native';
-import Estilizacao from '../../../styles/stylesDefault';
+import EstilizacaoPadrao from '../../../styles/stylesDefault';
+import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class QuintaTelaApresentacao extends Component {
   render() {
     return (
 
-      <View style={Estilizacao.container}>
+      <View style={EstilizacaoPadrao.container}>
         <StatusBar style="auto" />
-        <View style={Estilizacao.headerFooter} />
-        <View style={Estilizacao.body}>
+        <View style={EstilizacaoPadrao.headerFooter} />
+        <View style={EstilizacaoPadrao.body}>
 
           <Image
-            style={Estilizacao.image}
+            style={EstilizacaoPadraoInicial.imageLogo}
             source={
             require('../../assets/log_3.png')
           }
@@ -36,7 +37,7 @@ export default class QuintaTelaApresentacao extends Component {
           </Text>
 
         </View>
-        <View style={Estilizacao.headerFooter} />
+        <View style={EstilizacaoPadrao.headerFooter} />
       </View>
     );
   }

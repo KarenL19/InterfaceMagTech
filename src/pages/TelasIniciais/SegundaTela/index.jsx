@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Text, View, Image } from 'react-native';
+import {
+  Text, View, Image, StyleSheet,
+} from 'react-native';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class SegundaTela extends Component {
   render() {
@@ -10,7 +12,7 @@ export default class SegundaTela extends Component {
         <View style={EstilizacaoPadrao.headerFooter} />
         <View style={EstilizacaoPadrao.body}>
           <Image
-            style={EstilizacaoDiferenciada.imageLogoPag23456}
+            style={EstilizacaoPadraoInicial.imageLogo}
             source={
             require('../../../assets/log_3.png')
           }
@@ -22,13 +24,13 @@ export default class SegundaTela extends Component {
             um doador de órgãos?!
           </Text>
           <Image
-            style={EstilizacaoDiferenciada.imageFlorTela2}
+            style={style.imageFlor}
             source={
             require('../../../assets/flor.png')
           }
           />
           <Image
-            style={EstilizacaoDiferenciada.imagePontosInterrog}
+            style={style.imagePontosInterrog}
             source={
             require('../../../assets/pontoInterrog.png')
           }
@@ -40,3 +42,18 @@ export default class SegundaTela extends Component {
     );
   }
 }
+const style = StyleSheet.create({
+  imageFlor: {
+    height: 80,
+    width: 80,
+    position: 'relative',
+    top: '43%',
+    left: '37%',
+  },
+  imagePontosInterrog: {
+    height: 270,
+    width: 250,
+    bottom: '10%',
+
+  },
+});

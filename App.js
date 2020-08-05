@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import Tela1 from './src/pages/telasIniciais/primeiraTela/primeiraTela';
 import Tela2 from './src/pages/telasIniciais/segundaTela/segundaTela';

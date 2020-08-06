@@ -91,7 +91,8 @@ export default StyleSheet.create({
       footerComIcones:{
         flexDirection:'row',
         justifyContent: 'space-around',
-        
+        marginTop: -15,
+        marginLeft: 15
       }
     
 

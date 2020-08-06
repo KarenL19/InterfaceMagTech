@@ -11,7 +11,8 @@
 			"		 return (",
 			"		)",
 			"}",
-			"};"
+			"};"		
+
 	 	],
 	 	"description": "Log output to console"
 	 }

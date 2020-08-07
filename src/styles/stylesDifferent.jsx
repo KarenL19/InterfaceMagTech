@@ -8,10 +8,6 @@ export default StyleSheet.create({
     paddingTop: 150,
   },
 
-  
-
-  
-
   imageLupa: {
     height: 50,
     width: 50,

@@ -1,4 +1,6 @@
-import { Text, View, Image, StyleSheet } from 'react-native';
+import {
+  Text, View, Image, StyleSheet,
+} from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
 import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
@@ -38,10 +40,10 @@ export default class UltimaTela extends Component {
 }
 
 const style = StyleSheet.create({
-  mainTitle:{
+  mainTitle: {
     fontSize: 20,
     fontStyle: 'normal',
     position: 'relative',
     bottom: '7%',
-  }
-})
+  },
+});

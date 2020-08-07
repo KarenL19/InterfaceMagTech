@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  StatusBar, Text, View, Image,StyleSheet
+  StatusBar, Text, View, Image, StyleSheet,
 } from 'react-native';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
 import EstilizacaoPadraoInicial from '../styles/stylesDefault';

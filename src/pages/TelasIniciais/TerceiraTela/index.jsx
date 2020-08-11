@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   StatusBar, Text, View, Image, StyleSheet,
 } from 'react-native';
-import Estilizacao from '../../../styles/stylesDefault';
+import Estilizacao from '../../../assets/styles/global';
 import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class TerceiraTelaApresentação extends Component {
@@ -17,7 +17,7 @@ export default class TerceiraTelaApresentação extends Component {
           <Image
             style={EstilizacaoPadraoInicial.imageLogo}
             source={
-              require('../../assets/log_3.png')
+              require('../../assets/images/logo.png')
             }
           />
 
@@ -31,7 +31,7 @@ export default class TerceiraTelaApresentação extends Component {
           <Image
             style={style.mainImage}
             source={
-              require('../../assets/coracaoMao.png')
+              require('../../assets/images/coracaoMao.png')
             }
           />
 

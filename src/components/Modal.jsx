@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { Text, View, Image } from 'react-native';
-import Estilizacao from '../styles/stylesDefault';
-export default class FooterWithIcons extends Component {
+import Estilizacao from '../styles/stylesDefault'
+
+export default class Modal extends Component {
     render() {
          return (
-             
         )
 }
 };

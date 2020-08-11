@@ -13,7 +13,9 @@ export default class PrimeiraTela extends Component {
           <Image
             style={styles.imageLogoPag1}
             source={
-            require('../../../assets/log_3.png')
+            
+            require('../../../assets/logo.png')
+
           }
           />
           <Image

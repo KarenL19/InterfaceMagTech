@@ -3,6 +3,10 @@ import { View, Text, StyleSheet, Image, TextInput } from 'react-native';
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
+import logo from '../../assets/images/logo2.png';
+import clipboardIcon from '../../assets/icons/clipboard.png';
+
+
 export default class Cadastro extends Component {
   state = {
     switchValue: false,
@@ -21,13 +25,13 @@ export default class Cadastro extends Component {
     return (
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
         <Image
-          source={require('../../assets/logo2.png')}
+          source={logo}
           style={styles.image}
         />
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image
-              source={require('../../assets/clipboard.png')}
+              source={clipboardIcon}
               style={styles.loginIcon}
             />
             <TextInput

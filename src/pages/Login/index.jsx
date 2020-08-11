@@ -5,6 +5,9 @@ import {
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
+import logo from '../../assets/images/logo2.png';
+import loginIcon from '../../assets/icons/loginIcon.png';
+
 export default class Login extends Component {
   state = {
     switchValue: false,
@@ -23,13 +26,13 @@ export default class Login extends Component {
     return (
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
         <Image
-          source={require('../../assets/logo2.png')}
+          source={logo}
           style={styles.image}
         />
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image
-              source={require('../../assets/loginIcon.png')}
+              source={loginIcon}
               style={styles.loginIcon}
             />
             <TextInput

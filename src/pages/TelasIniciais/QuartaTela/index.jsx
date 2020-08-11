@@ -2,7 +2,7 @@ import {
   Text, View, Image, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
+import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoPadraoInicial from '../styles/stylesDefault';
 
 export default class QuartaTela extends Component {
@@ -14,22 +14,18 @@ export default class QuartaTela extends Component {
           <Image
             style={EstilizacaoPadraoInicial.imageLogo}
             source={
-                        require('../../../assets/logo.png')
-                         }
-          />
           <Text style={{ fontSize: 20, paddingTop: 10 }}>
-            Alguns dados
           </Text>
           <Image
             style={style.imageFlor}
             source={
-                        require('../../../assets/flor.png')
+                        require('../../../assets/images/flor.png')
                         }
           />
           <Image
             style={style.imageBarras}
             source={
-                        require('../../../assets/graficoBarras.png')
+                        require('../../../assets/images/graficoBarras.png')
                         }
           />
           <Text style={{ fontSize: 15, bottom: '20%' }}>

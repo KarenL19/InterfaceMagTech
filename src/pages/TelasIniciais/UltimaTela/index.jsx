@@ -4,8 +4,8 @@ import {
 import { RectButton } from 'react-native-gesture-handler';
 import React, { Component } from 'react';
 import { Feather as Icon } from '@expo/vector-icons';
-import logo from '../../../assets/logo.png';
-import celular from '../../../assets/celular.png';
+import logo from '../../../assets/images/logo.png';
+import celular from '../../../assets/images/celular.png';
 
 export default class UltimaTela extends Component {
   handleNavigationToLogin() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Tela1 from './src/pages/telasIniciais/primeiraTela/primeiraTela';
+import Tela1 from './src/pages/TelasIniciais/PrimeiraTela/primeiraTela.jsx';
 import Tela2 from './src/pages/telasIniciais/segundaTela/segundaTela';
 import DetalheScroll from './src/styles/stylesDefault'
 import {ScrollView} from 'react-native';

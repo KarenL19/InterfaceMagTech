@@ -19,6 +19,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
+      {/*<Tela2></Tela2>*/}
       <Header />
       <Routes />
       <Footer />

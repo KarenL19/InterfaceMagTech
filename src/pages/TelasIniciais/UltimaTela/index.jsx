@@ -43,7 +43,6 @@ export default class UltimaTela extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    height: 500,
     alignItems: 'center',
     justifyContent: 'space-between',
   },

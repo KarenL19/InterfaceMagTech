@@ -11,11 +11,10 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
-
   },
   headerFooter: {
     backgroundColor: '#34CBC5',
-    flex: 1,
+    flex: 0.1,
     flexDirection: 'row',
   },
 

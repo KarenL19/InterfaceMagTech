@@ -18,7 +18,6 @@ import imageCelular from '../../../assets/images/celular.png';
 
 // Import assets
 import EstilizacaoPadrao from '../../../assets/styles/global';
-import EstilizacaoPadraoInicial from '../../../assets/styles/stylesDifferent';
 
 const deviceWidth = Dimensions.get('window').width;
 
@@ -38,23 +37,13 @@ export default class PrimeiraTela extends Component {
           <View style={EstilizacaoPadrao.headerFooter} />
 
           <View style={styles.firstView}>
-            <Image
-              style={styles.imageLogoPag1}
-              source={logo}
-            />
-            <Image
-              style={styles.imageFlorTela1}
-              source={imageFlor}
-            />
+            <Image style={styles.imageLogoPag1} source={logo} />
+            <Image style={styles.imageFlorTela1} source={imageFlor} />
             <Text style={styles.firstTitle}>Seja um Doador de Órgãos!!</Text>
-
           </View>
 
           <View style={styles.secondView}>
-            <Image
-              style={styles.imageLogo}
-              source={logo}
-            />
+            <Image style={styles.imageLogo} source={logo} />
             <Text style={{
               fontSize: 20, paddingTop: 10, maxWidth: 300, textAlign: 'center', lineHeight: 30,
             }}
@@ -62,69 +51,38 @@ export default class PrimeiraTela extends Component {
               Por que você deveria se tornar
               um doador de órgãos?!
             </Text>
-            <Image
-              style={styles.imageFlor}
-              source={imageFlor}
-            />
-            <Image
-              style={styles.imagePontosInterrog}
-              source={imagePontosInterrog}
-            />
+            <Image style={styles.imageFlor} source={imageFlor} />
+            <Image style={styles.imagePontosInterrog} source={imagePontosInterrog} />
           </View>
 
           <View style={styles.thirdView}>
-
-            <Image
-              style={styles.imageLogo}
-              source={logo}
-            />
+            <Image style={styles.imageLogo} source={logo} />
 
             <Text style={styles.thirdTitle}>Sobre Doação de Órgãos</Text>
+
             <Text style={styles.thirdText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
               Donec vulputate lacinia mauris, quis rutrum risus sagittis eget.
             </Text>
 
-            <Image
-              style={styles.thirdImage}
-              source={imageCoracaoMao}
-            />
-
+            <Image style={styles.thirdImage} source={imageCoracaoMao} />
           </View>
 
           <View style={styles.forthView}>
-            <Image
-              style={styles.imageLogo}
-              source={logo}
-            />
-            <Text style={{ fontSize: 20, paddingTop: 10 }}>
-              Alguns dados
-            </Text>
-            <Image
-              style={styles.imageFlor}
-              source={imageFlor}
-            />
-            <Image
-              style={styles.imageBarras}
-              source={imageGrafico}
-            />
+            <Image style={styles.imageLogo} source={logo} />
+            <Text style={{ fontSize: 20, paddingTop: 10 }}>Alguns dados</Text>
+            <Image style={styles.imageFlor} source={imageFlor} />
+            <Image style={styles.imageBarras} source={imageGrafico} />
             <Text style={styles.forthText}>
               Lorem Ipsum is simply dummy text of the
               printing and typesetting industry.
             </Text>
-
           </View>
 
           <View style={styles.fifthView}>
-
-            <Image
-              style={styles.imageLogo}
-              source={logo}
-            />
-
+            <Image style={styles.imageLogo} source={logo} />
             <Text style={{ fontSize: 20, paddingBottom: 30 }}>Como Funciona</Text>
-
             <Text style={styles.fifthText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
@@ -132,19 +90,9 @@ export default class PrimeiraTela extends Component {
             </Text>
 
             <View style={styles.fifthViewImages}>
-              <Image
-                style={styles.imageHeart}
-                source={imageCoracao}
-              />
-              <Image
-                style={styles.imageArrowLeft}
-                source={imageSeta}
-              />
-              <Image
-                style={styles.imageAmbulancia}
-                source={imageAmbulancia}
-              />
-
+              <Image style={styles.imageHeart} source={imageCoracao} />
+              <Image style={styles.imageArrowLeft} source={imageSeta} />
+              <Image style={styles.imageAmbulancia} source={imageAmbulancia} />
             </View>
           </View>
 

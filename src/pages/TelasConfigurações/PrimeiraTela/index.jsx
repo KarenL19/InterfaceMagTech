@@ -8,37 +8,13 @@ import {
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../styles/stylesDefault';
 import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import CabecalhoConfig from '../../../components/HeaderWithIconsCG'
 
 export default class PrimeiraTela extends Component {
   render() {
     return (
-      <View style={EstilizacaoPadrao.container}>
-
-        <View style={EstilizacaoPadrao.headerFooter} />
-
-        <View style={EstilizacaoPadrao.body}>
-
-          <Text style={
-            style.mainTitle
-          }
-          >
-            COFIGURAÇÕES GERAIS
-          </Text>
-
-        </View>
-
-        <View style={EstilizacaoPadrao.headerFooter}>
-          <View style={{ flexDirection: 'row' }}>
-            <Image
-              style={EstilizacaoDiferenciada.imageLupa}
-              source={
-                        require('../../assets/pesquisa2.png')
-                        }
-            />
-          </View>
-        </View>
-
-      </View>
+      <CabecalhoConfig/>
+      <Text style={style.mainTitle}>CONFIGURAÇÕES GERAIS</Text>
     );
   }
 }

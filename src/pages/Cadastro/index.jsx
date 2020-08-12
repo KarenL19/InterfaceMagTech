@@ -6,6 +6,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 import logo from '../../assets/images/logo2.png';
 import clipboardIcon from '../../assets/icons/clipboard.png';
 
+import styles from './styles';
 
 export default class Cadastro extends Component {
   state = {
@@ -24,10 +25,7 @@ export default class Cadastro extends Component {
   render() {
     return (
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
-        <Image
-          source={logo}
-          style={styles.image}
-        />
+        <Image source={logo} style={styles.imageLogo}/>
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image
@@ -86,56 +84,3 @@ export default class Cadastro extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 30,
-  },
-  body: {
-    backgroundColor: '#d6d6d6',
-    flex: 1,
-    alignItems: "center"
-  },
-  box: {
-    height: 350,
-    backgroundColor: '#fff',
-    width: 325,
-    marginTop: 20,
-    borderRadius: 50,
-  },
-  image: {
-    height: 100,
-  },
-  loginIcon: {
-    marginTop: 10,
-  },
-  input: {
-    height: 30,
-    width: 280,
-    borderWidth: 1,
-    borderRadius: 25,
-    textAlign: 'center',
-    marginTop: 10,
-    backgroundColor: '#E6A9A9',
-  },
-  viewInput: {
-    alignItems: 'center',
-  },
-  cadastrarButton: {
-    borderWidth: 1,
-    borderRadius: 25,
-    padding: 10,
-    width: 200,
-    alignItems: 'center',
-    marginTop: 20,
-    backgroundColor: '#E6A9A9',
-    marginBottom: 5,
-  },
-  viewCheckbox: {
-    flexDirection: 'row',
-    margin: 10,
-  },
-  switchInput: {
-    marginTop: 0,
-  }
-});

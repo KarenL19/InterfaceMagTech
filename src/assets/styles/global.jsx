@@ -11,6 +11,7 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
+
   },
   headerFooter: {
     backgroundColor: '#34CBC5',

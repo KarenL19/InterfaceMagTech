@@ -6,21 +6,21 @@ import { RectButton } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 
 // Import images and icons
-import logo from '../../../assets/images/logo.png';
-import imageFlor from '../../../assets/images/flor.png';
-import imagePontosInterrog from '../../../assets/images/pontoInterrog.png';
-import imageCoracaoMao from '../../../assets/images/coracaoMao.png';
-import imageGrafico from '../../../assets/images/grafico.png';
-import imageCoracao from '../../../assets/images/heart.png';
-import imageSeta from '../../../assets/images/arrowLeft.png';
-import imageAmbulancia from '../../../assets/images/ambulancia.png';
-import imageCelular from '../../../assets/images/celular.png';
+import logo from '../../assets/images/logo.png';
+import imageFlor from '../../assets/images/flor.png';
+import imagePontosInterrog from '../../assets/images/pontoInterrog.png';
+import imageCoracaoMao from '../../assets/images/coracaoMao.png';
+import imageGrafico from '../../assets/images/grafico.png';
+import imageCoracao from '../../assets/images/heart.png';
+import imageSeta from '../../assets/images/arrowLeft.png';
+import imageAmbulancia from '../../assets/images/ambulancia.png';
+import imageCelular from '../../assets/images/celular.png';
 
 // Import assets
-import EstilizacaoPadrao from '../../../assets/styles/global';
+import EstilizacaoPadrao from '../../assets/styles/global';
 import styles from './styles';
 
-export default class PrimeiraTela extends Component {
+export default class TelasIniciais extends Component {
   handleNavigationToLogin() {
     const { navigation } = this.props;
     navigation.navigate('Login');
@@ -106,11 +106,7 @@ export default class PrimeiraTela extends Component {
                 onPress={() => this.handleNavigationToLogin()}
               >
                 <View>
-                  <Icon
-                    name="arrow-right"
-                    color="#696969"
-                    size={60}
-                  />
+                  <Icon name="arrow-right" color="#696969" size={60} />
                 </View>
               </RectButton>
             </View>

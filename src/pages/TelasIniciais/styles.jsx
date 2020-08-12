@@ -3,6 +3,9 @@ import { StyleSheet, Dimensions } from 'react-native';
 const deviceWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
+  container: {
+    height: '100%',
+  },
   imageLogo: {
     height: 130,
     width: 250,

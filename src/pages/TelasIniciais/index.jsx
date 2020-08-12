@@ -5,6 +5,10 @@ import React, { Component } from 'react';
 import { RectButton } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 
+// Import header and footer
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
 // Import images and icons
 import logo from '../../assets/images/logo.png';
 import imageFlor from '../../assets/images/flor.png';
@@ -28,12 +32,12 @@ export default class TelasIniciais extends Component {
 
   render() {
     return (
-      <View style={EstilizacaoPadrao.container}>
+      <View style={styles.container}>
+        <Header />
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
         >
-          <View style={EstilizacaoPadrao.headerFooter} />
 
           <View style={styles.firstView}>
             <Image style={styles.imageLogoPag1} source={logo} />
@@ -112,8 +116,8 @@ export default class TelasIniciais extends Component {
             </View>
           </View>
 
-          <View style={EstilizacaoPadrao.headerFooter} />
         </ScrollView>
+        <Footer />
       </View>
     );
   }

@@ -15,8 +15,8 @@ export default StyleSheet.create({
   },
   headerFooter: {
     backgroundColor: '#34CBC5',
-    flex: 0.1,
     flexDirection: 'row',
+    height: 62,
   },
 
   imageFlor: {

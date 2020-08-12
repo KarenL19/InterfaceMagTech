@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import EstiloPadrao from '../styles/stylesDefault';
+import EstiloPadrao from '../assets/styles/global';
 
 export default class Footer extends Component {
   render() {

@@ -11,11 +11,13 @@ export default class QuartaTela extends Component {
       <View style={EstilizacaoPadrao.container}>
         <View style={EstilizacaoPadrao.headerFooter} />
         <View style={EstilizacaoPadrao.body}>
-          <Image
+        <Image
             style={EstilizacaoPadraoInicial.imageLogo}
             source={
           <Text style={{ fontSize: 20, paddingTop: 10 }}>
           </Text>
+            }
+          />
           <Image
             style={style.imageFlor}
             source={

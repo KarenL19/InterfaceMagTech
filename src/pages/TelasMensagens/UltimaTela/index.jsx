@@ -3,7 +3,7 @@ import {
 } from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
 
 export default class UltimaTela extends Component {
   render() {

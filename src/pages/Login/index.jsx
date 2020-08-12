@@ -23,13 +23,13 @@ export default class Login extends Component {
     return (
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
         <Image
-          source={require('../../assets/logo2.png')}
+          source={require('../../assets/images/logo2.png')}
           style={styles.image}
         />
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image
-              source={require('../../assets/loginIcon.png')}
+              source={require('../../assets/icons/loginIcon.png')}
               style={styles.loginIcon}
             />
             <TextInput

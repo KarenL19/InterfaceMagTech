@@ -5,7 +5,7 @@
 	 	"body": [
 			"import React, {Component} from 'react';",
 			"import { Text, View, Image } from 'react-native';",
-			"import Estilizacao from '../../../styles/stylesDefault';",
+			"import Estilizacao from '$DIretorio';",
 			"export default class $NomeClasse extends Component {",
 			"	render() {",
 			"		 return (",

@@ -21,13 +21,13 @@ export default class Cadastro extends Component {
     return (
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
         <Image
-          source={require('../../assets/logo2.png')}
+          source={require('../../assets/images/logo2.png')}
           style={styles.image}
         />
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image
-              source={require('../../assets/clipboard.png')}
+              source={require('../../assets/icons/clipboard.png')}
               style={styles.loginIcon}
             />
             <TextInput

@@ -1,11 +1,12 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import {
   Alert,
   Modal,
   StyleSheet,
   Text,
   TouchableHighlight,
-  View
+  View,
+  Image
 } from "react-native";
 
 export default class App extends Component {
@@ -31,7 +32,21 @@ export default class App extends Component {
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
+           
+              <Image
+            style={styles.imageFlor}
+            source={
+                        require('../assets/images/flor.png')
+                        }
+          />
+
+              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
+              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
+              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
+              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
               <Text style={styles.modalText}>Hello World!</Text>
+              <Text style={styles.modalText}>Hello World!</Text>
+
 
               <TouchableHighlight
                 style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
@@ -94,6 +109,12 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center"
+  },
+  imageFlor: {
+    height: 80,
+    width: 80,
+    position: 'relative'
+
   }
 });
 

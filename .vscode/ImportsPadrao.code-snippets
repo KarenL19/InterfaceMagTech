@@ -1,0 +1,20 @@
+{
+	 "Print to console": {
+	 	"scope": "javascript,javascriptreact",
+	 	"prefix": "imP",
+	 	"body": [
+			"import React, {Component} from 'react';",
+			"import { Text, View, Image } from 'react-native';",
+			"import Estilizacao from '../../../styles/stylesDefault';",
+			"export default class $NomeClasse extends Component {",
+			"	render() {",
+			"		 return (",
+			"		)",
+			"}",
+			"};"
+				
+
+	 	],
+	 	"description": "Log output to console"
+	 }
+}

@@ -19,14 +19,6 @@ export default StyleSheet.create({
     height: 62,
   },
 
-  imageFlor: {
-    height: 80,
-    width: 80,
-    position: 'relative',
-    top: '43%',
-    left: '37%',
-  },
-
   imagemPerfilIcone: {
     height: 40,
     width: 40,
@@ -77,10 +69,12 @@ export default StyleSheet.create({
     marginBottom: 7,
     marginLeft: 2,
   },
+
   footerComIcones: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-
+    marginTop: -15,
+    marginLeft: 15,
   },
 
 });

@@ -14,7 +14,7 @@ export default class PrimeiraTelaMensagem extends Component {
           <Image
             style={Estilizacao.imagemPerfilIcone}
             source={
-              require('../../assets/icons/fotoPerfil.png')
+              require('../../../assets/icons/fotoPerfil.png')
             }
           />
           <Text style={Estilizacao.tituloMensagensHeader}>Mensagens</Text>
@@ -22,7 +22,7 @@ export default class PrimeiraTelaMensagem extends Component {
             <Image
               style={Estilizacao.imagemSinoIcone}
               source={
-              require('../../assets/icons/sino.png')
+              require('../../../assets/icons/sino.png')
             }
             />
           </View>
@@ -30,7 +30,7 @@ export default class PrimeiraTelaMensagem extends Component {
             <Image
               style={Estilizacao.imagemAviaoIcone}
               source={
-              require('../../assets/icons/IconeMensagem.png')
+              require('../../../assets/icons/IconeMensagem.png')
             }
             />
           </View>
@@ -42,7 +42,7 @@ export default class PrimeiraTelaMensagem extends Component {
               <Image
                 style={Estilizacao.imagemSinoIcone}
                 source={
-              require('../../assets/icons/lupaPesquisa.png')
+              require('../../../assets/icons/lupaPesquisa.png')
             }
               />
             </View>
@@ -50,7 +50,7 @@ export default class PrimeiraTelaMensagem extends Component {
               <Image
                 style={Estilizacao.imagemMagtechIcone}
                 source={
-              require('../../assets/icons/iconeFeed.png')
+              require('../../../assets/icons/iconeFeed.png')
             }
               />
             </View>
@@ -58,7 +58,7 @@ export default class PrimeiraTelaMensagem extends Component {
               <Image
                 style={Estilizacao.imagemSinoIcone}
                 source={
-              require('../../assets/icons/iconePostagem.png')
+              require('../../../assets/icons/iconePostagem.png')
             }
               />
             </View>
@@ -66,7 +66,7 @@ export default class PrimeiraTelaMensagem extends Component {
               <Image
                 style={Estilizacao.imagemAviaoIcone}
                 source={
-              require('../../assets/icons/iconeMenu.png')
+              require('../../../assets/icons/iconeMenu.png')
             }
               />
             </View>

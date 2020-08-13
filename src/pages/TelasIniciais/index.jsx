@@ -6,8 +6,8 @@ import { RectButton } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 
 // Import header and footer
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/HeaderSemIcone';
+import Footer from '../../components/FooterSemIcone';
 
 // Import images and icons
 import logo from '../../assets/images/logo.png';
@@ -37,6 +37,7 @@ export default class TelasIniciais extends Component {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
+          pagingEnabled
         >
 
           <View style={styles.firstView}>

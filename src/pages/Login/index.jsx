@@ -9,8 +9,8 @@ import logo from '../../assets/images/logo2.png';
 import loginIcon from '../../assets/icons/loginIcon.png';
 
 import styles from './styles';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/HeaderSemIcone';
+import Footer from '../../components/FooterSemIcone';
 
 export default class Login extends Component {
   state = {

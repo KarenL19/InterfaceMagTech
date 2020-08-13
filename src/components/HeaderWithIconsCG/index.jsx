@@ -28,9 +28,7 @@ export default class HeaderWithIconsCG extends Component {
           <View style={style.backgroundIcon}>
             <Image
               style={style.planeIcon}
-              source={
-                  require('../../assets/icons/IconeMensagem.png')
-                }
+              source={require('../../assets/icons/IconeMensagem.png')}
             />
           </View>
         </View>

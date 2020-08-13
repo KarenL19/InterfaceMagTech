@@ -46,33 +46,30 @@ export default class PrimeiraTelaMensagem extends Component {
             }
               />
             </View>
-            <View style={Estilizacao.backgroundIcone}>
-              <Image
-                style={Estilizacao.imagemMagtechIcone}
-                source={
+            <Image
+              style={Estilizacao.imagemMagtechIcone}
+              source={
               require('../../../assets/icons/iconeFeed.png')
             }
-              />
-            </View>
-            <View style={Estilizacao.backgroundIcone}>
-              <Image
-                style={Estilizacao.imagemSinoIcone}
-                source={
+            />
+          </View>
+          <View style={Estilizacao.backgroundIcone}>
+            <Image
+              style={Estilizacao.imagemSinoIcone}
+              source={
               require('../../../assets/icons/iconePostagem.png')
             }
-              />
-            </View>
-            <View style={Estilizacao.backgroundIcone}>
-              <Image
-                style={Estilizacao.imagemAviaoIcone}
-                source={
+            />
+          </View>
+          <Image
+            style={Estilizacao.imagemAviaoIcone}
+            source={
               require('../../../assets/icons/iconeMenu.png')
             }
-              />
-            </View>
-          </View>
+          />
         </View>
       </View>
+
     );
   }
 }

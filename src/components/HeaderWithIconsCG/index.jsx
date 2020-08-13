@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import {
   Text, View, Image, StyleSheet,
 } from 'react-native';
+
+import arrowLeftBlue from '../../assets/icons/arrowLeftBlue';
+
 import Estilizacao from '../assets/styles/global';
 
 export default class HeaderWithIconsCG extends Component {
@@ -12,15 +15,13 @@ export default class HeaderWithIconsCG extends Component {
         <View style={Estilizacao.headerFooter, style.headerWithIcon}>
           <Image
             style={style.imageArrowIcon}
-            source={
-                  require('imagem da seta azul')
-                }
+            source={arrowLeftBlue}
           />
           <View style={style.backgroundIcon}>
             <Image
               style={style.bellIcon}
               source={
-                  require('../assets/icons/sino.png')
+                  require('../../assets/icons/sino.png')
                 }
             />
           </View>
@@ -28,7 +29,7 @@ export default class HeaderWithIconsCG extends Component {
             <Image
               style={style.planeIcon}
               source={
-                  require('../assets/icons/IconeMensagem.png')
+                  require('../../assets/icons/IconeMensagem.png')
                 }
             />
           </View>

@@ -3,7 +3,10 @@ import {
   Text, View, Image, StyleSheet,
 } from 'react-native';
 
-import arrowLeftBlue from '../../assets/icons/arrowLeftBlue';
+import iconBell from '../../assets/icons/sino.png';
+import iconArrowLeftBlue from '../../assets/icons/arrowLeftBlue.png';
+import iconMessage from '../../assets/icons/IconeMensagem.png';
+
 
 import Estilizacao from '../assets/styles/global';
 
@@ -12,23 +15,22 @@ export default class HeaderWithIconsCG extends Component {
     return (
       <View style={Estilizacao.container}>
         <StatusBar style="auto" />
-        <View style={Estilizacao.headerFooter, style.headerWithIcon}>
+        <View style={Estilizacao.headerFooter, styles.headerWithIcon}>
           <Image
-            style={style.imageArrowIcon}
-            source={arrowLeftBlue}
+            style={styles.imageArrowIcon}
+            source={iconArrowLeftBlue}
           />
-          <View style={style.backgroundIcon}>
+          <Text style={Estilizacao.tituloMensagensHeader}>CONFIGURAÇÕES GERAIS</Text>
+          <View style={styles.backgroundIcon}>
             <Image
-              style={style.bellIcon}
-              source={
-                  require('../../assets/icons/sino.png')
-                }
+              style={styles.bellIcon}
+              source={iconBell}
             />
           </View>
-          <View style={style.backgroundIcon}>
+          <View style={styles.backgroundIcon}>
             <Image
-              style={style.planeIcon}
-              source={require('../../assets/icons/IconeMensagem.png')}
+              style={styles.planeIcon}
+              source={iconMessage}
             />
           </View>
         </View>
@@ -37,7 +39,7 @@ export default class HeaderWithIconsCG extends Component {
     );
   }
 }
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   headerWithIcon: {
     flexDirection: 'row',
   },
@@ -72,6 +74,13 @@ const style = StyleSheet.create({
     width: 30,
     margin: 3,
     marginTop: 5,
+  },
+  mainTitle: {
+    fontSize: 20,
+    marginLeft: 35,
+    paddingTop: 45,
+    color: '#000000',
+    marginRight: 30,
   },
 
 });

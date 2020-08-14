@@ -27,7 +27,7 @@ import styles from './styles';
 export default class TelasIniciais extends Component {
   handleNavigationToLogin() {
     const { navigation } = this.props;
-    navigation.navigate('Login');
+    navigation.navigate('Cadastro');
   }
 
   render() {

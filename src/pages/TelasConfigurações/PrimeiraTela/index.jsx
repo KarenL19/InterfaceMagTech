@@ -1,30 +1,44 @@
 import {
-    StatusBar, Text, View, Image, StyleSheet,
-  } from 'react-native';
-  import React, { Component } from 'react';
-  import Estilizacao from '../../../styles/stylesDefault';
-
-  import { Text, View, Image } from 'react-native';
+  StatusBar, Text, View, Image, StyleSheet,
+} from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import EstilizacaoPadrao from '../../../assets/styles/global';
+import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
 
 export default class PrimeiraTela extends Component {
   render() {
     return (
       <View style={EstilizacaoPadrao.container}>
 
-        <View style={EstilizacaoPadrao.headerFooter} />
+        
+        <View style={EstilizacaoPadrao.headerFooter}>
+          
+          <View>
+          <Text style={
+            style.mainTitle
+          }>
+            COFIGURAÇÕES GERAIS
+          </Text>
+          </View>
+
+        </View>
 
         <View style={EstilizacaoPadrao.body}>
 
-          <Text style={
-            style.mainTitle
-          }
-          >
-            COFIGURAÇÕES GERAIS
-          </Text>
+         
+      
 
+
+        </View>
+
+        <View>
+          <Image
+          style={style.prancheta}
+            source={
+              require('../../../assets/images/prancheta.png')
+            }
+          />
+          
         </View>
 
         <View style={EstilizacaoPadrao.headerFooter}>
@@ -32,8 +46,17 @@ export default class PrimeiraTela extends Component {
             <Image
               style={EstilizacaoDiferenciada.imageLupa}
               source={
-                        require('../../assets/pesquisa2.png')
-                        }
+                require('../../../assets/icons/botaoLupa.png')
+              }
+            />
+          </View>
+          <View></View>
+          <View style={{ flexDirection: 'row' }}>
+            <Image
+              style={EstilizacaoDiferenciada.imageLupa}
+              source={
+                require('../../../assets/icons/botaoFeed.png')
+              }
             />
           </View>
         </View>
@@ -44,10 +67,18 @@ export default class PrimeiraTela extends Component {
 }
 
 const style = StyleSheet.create({
-    mainTitle:{
-        fontSize: 20,
-        fontStyle: 'normal',
-        position: 'relative',
-        bottom: '7%'
-    }
+  mainTitle: {
+    paddingTop: 2,
+    fontSize: 20,
+    fontStyle: 'normal',
+    position: 'relative',
+    bottom: '7%'
+  },
+  prancheta:{
+
+    
+    height: 550,
+    width: 350
+    
+  }
 });

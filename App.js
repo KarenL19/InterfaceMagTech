@@ -1,17 +1,26 @@
+import { StatusBar } from 'expo-status-bar';
+import { View, StyleSheet } from 'react-native';
+import React from 'react';
+// Import src components
+import Routes from './src/routes';
+import Modal from './src/components/Modal'
+import TelaConf from './src/pages/TelasConfigurações/PrimeiraTela'
+import TelaMsg from './src/pages/TelasMensagens/PrimeiraTela'
+import PrimeiraTela from './src/pages/TelasConfigurações/PrimeiraTela';
 
-import React from 'react'
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
-import Modal from './src/components/Modal2'
-
-const App = () => {
-  return(
-    <View style={styles.container}>
-      <Text style={styles.title}>Animated Modal RN</Text>
-      <TouchableOpacity style={styles.button}>
-        <Text>Open Modal</Text>
-      </TouchableOpacity>
+export default function App() {
+  return (
+    <View style={{ height: '100%' }}>
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      <PrimeiraTela/>
+      {/*
+      <Routes />
       
-      <Modal />
+      */}
     </View>
   )
 }
@@ -38,4 +47,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App
+

@@ -2,69 +2,70 @@ import {
   StatusBar, Text, View, Image,
 } from 'react-native';
 import React, { Component } from 'react';
-import Estilizacao from '../../../assets/styles/global';
+// import Estilizacao from '../../../assets/styles/global';
+import EstilizacaoMensagem from '../PrimeiraTela/styles';
 
 export default class PrimeiraTelaMensagem extends Component {
   render() {
     return (
 
-      <View style={Estilizacao.container}>
+      <View style={EstilizacaoMensagem.container}>
         <StatusBar style="auto" />
-        <View style={[Estilizacao.headerFooter, Estilizacao.headerComIcones]}>
+        <View style={[EstilizacaoMensagem.headerFooter, EstilizacaoMensagem.headerComIcones]}>
           <Image
-            style={Estilizacao.imagemPerfilIcone}
+            style={EstilizacaoMensagem.imagemPerfilIcone}
             source={
               require('../../../assets/icons/fotoPerfil.png')
             }
           />
-          <Text style={Estilizacao.tituloMensagensHeader}>Mensagens</Text>
-          <View style={Estilizacao.backgroundIcone}>
+          <Text style={EstilizacaoMensagem.tituloMensagensHeader}>Mensagens</Text>
+          <View style={EstilizacaoMensagem.backgroundIcone}>
             <Image
-              style={Estilizacao.imagemSinoIcone}
+              style={EstilizacaoMensagem.imagemSinoIcone}
               source={
               require('../../../assets/icons/sino.png')
             }
             />
           </View>
-          <View style={Estilizacao.backgroundIcone}>
+          <View style={EstilizacaoMensagem.backgroundIcone}>
             <Image
-              style={Estilizacao.imagemAviaoIcone}
+              style={EstilizacaoMensagem.imagemAviaoIcone}
               source={
               require('../../../assets/icons/IconeMensagem.png')
             }
             />
           </View>
         </View>
-        <View style={Estilizacao.body} />
-        <View style={Estilizacao.headerFooter}>
-          <View style={Estilizacao.footerComIcones}>
-            <View style={Estilizacao.backgroundIcone}>
+        <View style={EstilizacaoMensagem.body} />
+        <View style={EstilizacaoMensagem.headerFooter}>
+          <View style={EstilizacaoMensagem.footerComIcones}>
+            <View style={EstilizacaoMensagem.backgroundIcone}>
               <Image
-                style={Estilizacao.imagemSinoIcone}
+                style={EstilizacaoMensagem.imagemSinoIcone}
                 source={
               require('../../../assets/icons/lupaPesquisa.png')
             }
               />
             </View>
-            <View style={Estilizacao.backgroundIcone}>
+            <View style={EstilizacaoMensagem.backgroundIcone}>
               <Image
-                style={Estilizacao.imagemMagtechIcone}
+                style={EstilizacaoMensagem.imagemMagtechIcone}
                 source={
               require('../../../assets/icons/iconeFeed.png')
             }
               />
             </View>
-            <View style={Estilizacao.backgroundIcone}>
+            <View style={EstilizacaoMensagem.backgroundIcone}>
               <Image
-                style={Estilizacao.imagemSinoIcone}
+                style={EstilizacaoMensagem.imagemSinoIcone}
                 source={
               require('../../../assets/icons/iconePostagem.png')
             }
               />
             </View>
-            <View style={Estilizacao.backgroundIcone}>
+            <View style={EstilizacaoMensagem.backgroundIcone}>
               <Image
-                style={Estilizacao.imagemAviaoIcone}
+                style={EstilizacaoMensagem.imagemAviaoIcone}
                 source={
               require('../../../assets/icons/iconeMenu.png')
             }

@@ -1,12 +1,11 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import {
   Alert,
   Modal,
   StyleSheet,
   Text,
   TouchableHighlight,
-  View,
-  Image
+  View
 } from "react-native";
 
 export default class App extends Component {
@@ -21,47 +20,44 @@ export default class App extends Component {
   render() {
     const { modalVisible } = this.state;
     return (
-      <View style={styles.centeredView}>
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={() => {
-            Alert.alert("Modal has been closed.");
+      <View>
+        <View style={styles.centeredView}>
+          <Modal
+            animationType="slide"
+            transparent={true}
+            visible={modalVisible}
+            onRequestClose={() => {
+              Alert.alert("Modal has been closed.");
+            }}
+          >
+            <View style={styles.centeredView}>
+              <View style={styles.modalView}>
+                <Text style={styles.modalText}>Hello World!</Text>
+
+                <TouchableHighlight
+                  style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+                  onPress={() => {
+                    this.setModalVisible(!modalVisible);
+                  }}
+                >
+                  <Text style={styles.textStyle}>Fechar Modal</Text>
+                </TouchableHighlight>
+              </View>
+            </View>
+          </Modal>
+        </View>
+        <View style={styles.bottView}>
+        <TouchableHighlight
+          style={styles.openButton}
+          onPress={() => {
+            this.setModalVisible(true);
           }}
         >
-          <View style={styles.centeredView}>
-            <View style={styles.modalView}>
-           
-              <Image
-            style={styles.imageFlor}
-            source={
-                        require('../assets/images/flor.png')
-                        }
-          />
+          <Text style={styles.textStyle}>Teste Modal</Text>
+        </TouchableHighlight>
+        </View>
+        </View>
 
-              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
-              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
-              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
-              <Text style={styles.modalText}>Hello World!lalalalalalalalalalalalalal</Text>
-              <Text style={styles.modalText}>Hello World!</Text>
-              <Text style={styles.modalText}>Hello World!</Text>
-
-
-              <TouchableHighlight
-                style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
-                onPress={() => {
-                  this.setModalVisible(!modalVisible);
-                }}
-              >
-                <Text style={styles.textStyle}>Fechar Modal</Text>
-              </TouchableHighlight>
-            </View>
-          </View>
-        </Modal>
-
-       
-      </View>
     );
   }
 }
@@ -72,6 +68,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 22
+  },
+  bottView:{
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 150,
+    marginRight: 150
   },
   modalView: {
     margin: 20,
@@ -88,7 +91,12 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5
   },
- 
+  openButton: {
+    backgroundColor: "#F194FF",
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2
+  },
   textStyle: {
     color: "white",
     fontWeight: "bold",
@@ -97,13 +105,5 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center"
-  },
-  imageFlor: {
-    height: 80,
-    width: 80,
-    position: 'relative'
-
   }
 });
-
-

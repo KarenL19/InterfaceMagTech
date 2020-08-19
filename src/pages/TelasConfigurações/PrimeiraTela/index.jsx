@@ -1,11 +1,12 @@
 import {
-  StatusBar, Text, View, Image, StyleSheet,
+  StatusBar, Text, View, ImageBackground, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
 import CabecalhoConfig from '../../../components/HeaderWithIconsCG'
 import prancheta  from '../../../assets/images/prancheta.png'
+import Modal from '../../../components/Modal'
 
 export default class PrimeiraTela extends Component {
   render() {
@@ -19,13 +20,17 @@ export default class PrimeiraTela extends Component {
         <View style={EstilizacaoPadrao.body}>
 
            
-          <Image
+          <ImageBackground
               style={style.prancheta}
               source={prancheta}
-            />
 
 
-            
+            >
+
+
+          <Modal/>
+
+          </ImageBackground>
 
         </View>
 
@@ -47,14 +52,7 @@ const style = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 
-  openButton: {
-    backgroundColor: "#F194FF",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2
-  },
- 
-  prancheta:{
+   prancheta:{
 
     justifyContent: "center",
     alignItems: "center",
@@ -63,11 +61,6 @@ const style = StyleSheet.create({
     width: 360,
     padding: 10,
     marginTop: 10
-  },
-
-  textStyle: {
-    color: "white",
-    fontWeight: "bold",
-    textAlign: "center"
   }
+
 });

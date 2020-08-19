@@ -4,81 +4,70 @@ import {
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
+import CabecalhoConfig from '../../../components/HeaderWithIconsCG'
+import prancheta  from '../../../assets/images/prancheta.png'
 
 export default class PrimeiraTela extends Component {
   render() {
     return (
-      <View style={EstilizacaoPadrao.container}>
+      <View>
 
-        
-        <View style={EstilizacaoPadrao.headerFooter}>
-          
-          <View>
-          <Text style={
-            style.mainTitle
-          }>
-            COFIGURAÇÕES GERAIS
-          </Text>
-          </View>
+      <CabecalhoConfig/>
 
-        </View>
-
+      <View style={style.container}>
+                               
         <View style={EstilizacaoPadrao.body}>
 
-         
-      
-
-
-        </View>
-
-        <View>
+           
           <Image
-          style={style.prancheta}
-            source={
-              require('../../../assets/images/prancheta.png')
-            }
-          />
-          
+              style={style.prancheta}
+              source={prancheta}
+            />
+
+
+            
+
         </View>
 
-        <View style={EstilizacaoPadrao.headerFooter}>
-          <View style={{ flexDirection: 'row' }}>
-            <Image
-              style={EstilizacaoDiferenciada.imageLupa}
-              source={
-                require('../../../assets/icons/botaoLupa.png')
-              }
-            />
-          </View>
-          <View></View>
-          <View style={{ flexDirection: 'row' }}>
-            <Image
-              style={EstilizacaoDiferenciada.imageLupa}
-              source={
-                require('../../../assets/icons/botaoFeed.png')
-              }
-            />
-          </View>
-        </View>
 
+            
       </View>
+    </View>
+
     );
   }
 }
 
 const style = StyleSheet.create({
-  mainTitle: {
-    paddingTop: 2,
-    fontSize: 20,
-    fontStyle: 'normal',
-    position: 'relative',
-    bottom: '7%'
+
+  container:{
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
   },
+
+  openButton: {
+    backgroundColor: "#F194FF",
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2
+  },
+ 
   prancheta:{
 
-    
-    height: 550,
-    width: 350
-    
+    justifyContent: "center",
+    alignItems: "center",
+    alignSelf: 'center',
+    height: 500,
+    width: 360,
+    padding: 10,
+    marginTop: 10
+  },
+
+  textStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center"
   }
 });

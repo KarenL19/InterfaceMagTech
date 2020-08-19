@@ -60,14 +60,7 @@ export default class App extends Component {
           </View>
         </Modal>
 
-        <TouchableHighlight
-          style={styles.openButton}
-          onPress={() => {
-            this.setModalVisible(true);
-          }}
-        >
-          <Text style={styles.textStyle}>Teste Modal</Text>
-        </TouchableHighlight>
+       
       </View>
     );
   }
@@ -95,12 +88,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5
   },
-  openButton: {
-    backgroundColor: "#F194FF",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2
-  },
+ 
   textStyle: {
     color: "white",
     fontWeight: "bold",

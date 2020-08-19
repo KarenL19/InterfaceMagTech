@@ -16,7 +16,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <PrimeiraTela/>
+      <Modal/>
       {/*
       <Routes />
       

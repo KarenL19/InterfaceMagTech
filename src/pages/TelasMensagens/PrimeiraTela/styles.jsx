@@ -16,9 +16,7 @@ export default StyleSheet.create({
   headerFooter: {
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
-    height: 85,
-    justifyContent: 'space-around',
-    
+    height: 85,    
   },
 
   imageFlor: {
@@ -81,8 +79,9 @@ export default StyleSheet.create({
   },
   footerComIcones: {
     flexDirection: 'row',
-    marginTop: -20,
-    marginLeft: 15
+    justifyContent: 'space-around',
+    marginRight: -20,
+    
   },
 
 });

@@ -37,8 +37,8 @@ export default class PrimeiraTelaMensagem extends Component {
           </View>
         </View>
         <View style={EstilizacaoMensagem.body} />
-        <View style={EstilizacaoMensagem.headerFooter}>
-          <View style={EstilizacaoMensagem.footerComIcones}>
+        <View>
+          <View style={[EstilizacaoMensagem.footerComIcones, EstilizacaoMensagem.headerFooter]}>
             <View style={EstilizacaoMensagem.backgroundIcone}>
               <Image
                 style={EstilizacaoMensagem.imagemSinoIcone}

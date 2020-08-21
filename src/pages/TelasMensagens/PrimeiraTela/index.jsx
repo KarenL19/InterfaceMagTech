@@ -10,14 +10,22 @@ import Footer from '../../../components/FooterWithIcons';
 
 export default class PrimeiraTelaMensagem extends Component {
 render() {
-  return (
+return (
 
-    <View style={EstilizacaoMensagem.container}>
-      <StatusBar style="auto" />
-      <Header/>
-      <View style={EstilizacaoMensagem.body} />
-      <Footer/>  
-    </View>
-  );
+<View style={EstilizacaoMensagem.container}>
+  <StatusBar style="auto" />
+  <Header/>
+  <View style={EstilizacaoMensagem.body}>
+    <View style={EstilizacaoMensagem.campoDePesquisa}>
+    
+    </View>    
+    <View style={EstilizacaoMensagem.viewGeralContatos}>
+      <View style={EstilizacaoMensagem.viewContatoUnitario}>
+      </View>  
+    </View>  
+  </View>
+  <Footer/>  
+</View>
+);
 }
 }

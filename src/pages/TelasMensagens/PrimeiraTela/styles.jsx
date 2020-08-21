@@ -14,4 +14,18 @@ export default StyleSheet.create({
 
   },
 
+  campoDePesquisa:{
+    flex: 1,
+    backgroundColor: 'gray',
+    
+
+  },
+
+  viewGeralContatos:{
+
+  },
+
+  viewContatoUnitario:{
+
+  },
 });

@@ -3,7 +3,6 @@ import { View, StyleSheet } from 'react-native';
 import React from 'react';
 // Import src components
 import Routes from './src/routes';
-import Modal from './src/components/Modal'
 import TelaConf from './src/pages/TelasConfigurações/PrimeiraTela'
 import TelaMsg from './src/pages/TelasMensagens/PrimeiraTela'
 import PrimeiraTela from './src/pages/TelasConfigurações/PrimeiraTela';

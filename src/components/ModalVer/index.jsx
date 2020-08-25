@@ -46,14 +46,14 @@ export default class App extends Component {
             </View>
           </Modal>
         </View>
-        <View style={styles.bottView}>
+        <View>
         <TouchableHighlight
           style={styles.openButton}
           onPress={() => {
             this.setModalVisible(true);
           }}
         >
-          <Text style={styles.textStyle}>Teste Modal</Text>
+          <Text style={styles.textStyle}>Verificação </Text>
         </TouchableHighlight>
         </View>
         </View>
@@ -69,13 +69,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 22
   },
-  bottView:{
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 150,
-    marginRight: 150
-  },
+  
   modalView: {
     margin: 20,
     backgroundColor: "white",
@@ -92,13 +86,14 @@ const styles = StyleSheet.create({
     elevation: 5
   },
   openButton: {
-    backgroundColor: "#F194FF",
+    backgroundColor: "#FFE6E6",
     borderRadius: 20,
     padding: 10,
-    elevation: 2
+    elevation: 2,
+    borderWidth: 1
   },
   textStyle: {
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     textAlign: "center"
   },

@@ -15,10 +15,8 @@ export default StyleSheet.create({
   },
 
   campoDePesquisa:{
-    flex: 8,
-    flexDirection: 'row',
     height: 100,
-    width: 100,
+    width: '100%',
     borderColor: 'black',
     borderWidth: 2,
     backgroundColor: 'white',
@@ -28,14 +26,12 @@ export default StyleSheet.create({
   },
 
   viewGeralContatos:{
-    flex:20,
-    height: '89%',
+    height: '100%',
     width: '100%',
     marginTop: 126,
     borderColor: 'black',
     borderWidth: 2,
     backgroundColor: 'grey',
-    flexDirection: 'row',
     
   },
 

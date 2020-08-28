@@ -25,8 +25,6 @@ export default StyleSheet.create({
     
   },
 
-  
-  
   viewGeralContatos:{
     height: '100%',
     width: '100%',

@@ -4,9 +4,13 @@ StatusBar, Text, View, Image,
 import React, { Component } from 'react';
 import EstilizacaoMensagem from './styles';
 
+
 //Import Header and Footer
 import Header from '../../../components/HeaderWithIcons';
 import Footer from '../../../components/FooterWithIcons';
+
+//Import Images
+import iconeAviao from '../../../assets/icons/IconeMensagem.png';
 
 export default class PrimeiraTelaMensagem extends Component {
 render() {
@@ -17,7 +21,12 @@ return (
   <Header/>
   <View style={EstilizacaoMensagem.body}>
     <View style={EstilizacaoMensagem.campoDePesquisa}>
-    
+    <View style={EstilizacaoMensagem.backgroundHeaderIcone}>
+    <Image
+      style={EstilizacaoMensagem.imagemAviaoIcone}
+      source={iconeAviao}
+      />
+     </View> 
     <View style={EstilizacaoMensagem.viewGeralContatos}>
       <View style={EstilizacaoMensagem.viewContatoUnitario}>
       </View>  

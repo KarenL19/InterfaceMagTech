@@ -53,7 +53,7 @@ export default class App extends Component {
             this.setModalVisible(true);
           }}
         >
-          <Text style={styles.textStyle}>Exame        </Text>
+          <Text style={styles.textStyle}>Conta        </Text>
         </TouchableHighlight>
         </View>
         </View>

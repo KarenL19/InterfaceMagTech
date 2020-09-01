@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     height: '100%',
-    
+
   },
 
   body: {
@@ -13,8 +13,8 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
-  
-  campoDePesquisa:{
+
+  campoDePesquisa: {
     height: '100%',
     width: '100%',
     marginTop: 126,
@@ -22,10 +22,10 @@ export default StyleSheet.create({
     borderWidth: 2,
     backgroundColor: '#dcdcdc',
     marginBottom: 126,
-    
+
   },
 
-  viewGeralContatos:{
+  viewGeralContatos: {
     height: '100%',
     width: '100%',
     borderColor: 'black',
@@ -34,7 +34,7 @@ export default StyleSheet.create({
     marginTop: 100,
 
   },
-  
+
   backgroundHeaderIcone: {
     height: 40,
     width: 40,
@@ -53,7 +53,7 @@ export default StyleSheet.create({
     marginTop: 5,
   },
 
-  viewContatoUnitario:{
-   
+  viewContatoUnitario: {
+
   },
 });

@@ -4,10 +4,10 @@ import {
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
 import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
-import CabecalhoConfig from '../../../components/HeaderWithIconsCG'
-import prancheta  from '../../../assets/images/prancheta.png'
-import ModalPrivacidade from '../../../components/ModalConfgPrivacidade'
-import ModalExame from '../../../components/ModalConfgExames'
+import CabecalhoConfig from '../../../components/HeaderWithIconsCG';
+import prancheta from '../../../assets/images/prancheta.png';
+import ModalPrivacidade from '../../../components/ModalConfgPrivacidade';
+import ModalExame from '../../../components/ModalConfgExames';
 import styles from '../../TelasIniciais/styles';
 
 export default class PrimeiraTela extends Component {
@@ -15,41 +15,33 @@ export default class PrimeiraTela extends Component {
     return (
       <View>
 
-      <CabecalhoConfig/>
+        <CabecalhoConfig />
 
-      <View style={styles.container}>
-                               
-        <View style={EstilizacaoPadrao.body}>
+        <View style={styles.container}>
 
-           
-          <ImageBackground
+          <View style={EstilizacaoPadrao.body}>
+
+            <ImageBackground
               style={style.prancheta}
               source={prancheta}
-
-
             >
 
-          <View style={style.bottView}>
-            <View style={style.privacidade}>
-              <ModalPrivacidade/>
-            </View>
-            <View style={style.exames}>
-              <ModalExame/>
-            </View>
-          
+              <View style={style.bottView}>
+                <View style={style.privacidade}>
+                  <ModalPrivacidade />
+                </View>
+                <View style={style.exames}>
+                  <ModalExame />
+                </View>
+
+              </View>
+
+            </ImageBackground>
 
           </View>
-          
-
-          </ImageBackground>
-          
 
         </View>
-
-
-            
       </View>
-    </View>
 
     );
   }
@@ -57,37 +49,37 @@ export default class PrimeiraTela extends Component {
 
 const style = StyleSheet.create({
 
-  container:{
+  container: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
 
-   prancheta:{
+  prancheta: {
 
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     alignSelf: 'center',
     height: 500,
     width: 360,
     padding: 10,
-    marginTop: 10
+    marginTop: 10,
   },
-  bottView:{
+  bottView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-   
+    justifyContent: 'center',
+    alignItems: 'center',
+
   },
 
-  privacidade:{
+  privacidade: {
     marginTop: 20,
-    
+
   },
 
-  exames:{
-    marginBottom: 100
-  }
+  exames: {
+    marginBottom: 100,
+  },
 
 });

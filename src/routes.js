@@ -6,12 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import TelasIniciais from './pages/TelasIniciais';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
-<<<<<<< HEAD
 import TelasMensagens from './pages/TelasMensagens/PrimeiraTela/index';
 import Configuracoes from './pages/TelasConfigurações/PrimeiraTela';
-=======
-import TelasMensagens from './pages/TelasMensagens/PrimeiraTela/index'
->>>>>>> tarefasGiovana
 
 const AppStack = createStackNavigator();
 
@@ -21,11 +17,7 @@ export default class Routes extends Component {
       <NavigationContainer>
         <AppStack.Navigator
           headerMode="none"
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> tarefasGiovana
         >
           <AppStack.Screen name="TelasIniciais" component={TelasMensagens} />
           <AppStack.Screen name="Login" component={Login} />

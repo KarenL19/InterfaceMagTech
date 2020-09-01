@@ -17,7 +17,7 @@ export default StyleSheet.create({
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
     height: 62,
-    
+
   },
 
   imagemPerfilIcone: {
@@ -74,13 +74,8 @@ export default StyleSheet.create({
   footerComIcones: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-<<<<<<< HEAD
-    marginTop: -15,
-    marginLeft: 15,
-=======
     marginTop: -25,
-    marginLeft: 15
->>>>>>> tarefasGiovana
+    marginLeft: 15,
   },
 
 });

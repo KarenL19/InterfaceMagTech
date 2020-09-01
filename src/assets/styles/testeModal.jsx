@@ -2,11 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
 
-    TextoModal:{
-        flex:1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-
+  TextoModal: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 
 });

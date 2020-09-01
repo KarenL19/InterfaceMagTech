@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  
+
   headerFooter: {
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
     flex: 1,
-    
+
   },
 
   imagemLupaPostagem: {
@@ -30,10 +30,10 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginRight: 20,
     marginTop: 40,
-    
+
   },
 
-  backgroundFooterIcone:{
+  backgroundFooterIcone: {
     height: 40,
     width: 40,
     backgroundColor: 'white',
@@ -53,7 +53,7 @@ export default StyleSheet.create({
   footerComIcones: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-     
+
   },
 
 });

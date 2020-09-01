@@ -1,20 +1,19 @@
 import {
-StatusBar, Text, View, Image,
+  StatusBar, Text, View, Image,
 } from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoMensagem from './styles';
+import Estilizacao from './styles';
 
-
-//Import Header and Footer
-import Header from '../../../components/HeaderWithIconsFMM';
+// Import Header and Footer
+import Header from '../../../components/HeaderWithIconsFmm';
 import Footer from '../../../components/FooterWithIcons';
 
-//Import Images
+// Import Images
 import iconeAviao from '../../../assets/icons/IconeMensagem.png';
 
 export default class PrimeiraTelaMensagem extends Component {
-render() {
-return (
+  render() {
+    return (
 
       <View style={Estilizacao.container}>
         <StatusBar style="auto" />
@@ -77,26 +76,6 @@ return (
           />
         </View>
       </View>
-
-<View style={EstilizacaoMensagem.container}>
-  <StatusBar style="auto" />
-  <Header/>
-  <View style={EstilizacaoMensagem.body}>
-    <View style={EstilizacaoMensagem.campoDePesquisa}>
-    <View style={EstilizacaoMensagem.backgroundHeaderIcone}>
-    <Image
-      style={EstilizacaoMensagem.imagemAviaoIcone}
-      source={iconeAviao}
-      />
-     </View> 
-    <View style={EstilizacaoMensagem.viewGeralContatos}>
-      <View style={EstilizacaoMensagem.viewContatoUnitario}>
-      </View>  
-    </View>    
-    </View>  
-  </View>
-  <Footer/>  
-</View>
-);
-}
+    );
+  }
 }

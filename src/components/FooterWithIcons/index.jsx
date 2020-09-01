@@ -4,8 +4,8 @@ import {
 import React, { Component } from 'react';
 import styles from './styles';
 // Import Icons
-import iconeLupa from '../../assets/icons/lupaPesquisa.png';
-import iconeFeed from '../../assets/icons/iconeFeed.png';
+import iconeLupa from '../../assets/icons/botaoLupa.png';
+import iconeFeed from '../../assets/icons/botaoFeed.png';
 import iconePostagem from '../../assets/icons/iconePostagem.png';
 import iconeMenu from '../../assets/icons/iconeMenu.png';
 

@@ -1,9 +1,8 @@
 import {
-  StatusBar, Text, View, ImageBackground, StyleSheet,
+  View, ImageBackground, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
-import EstilizacaoDiferenciada from '../../../assets/styles/stylesDifferent';
 import CabecalhoConfig from '../../../components/HeaderWithIconsCG';
 import prancheta from '../../../assets/images/prancheta.png';
 import ModalPrivacidade from '../../../components/ModalConfgPrivacidade';

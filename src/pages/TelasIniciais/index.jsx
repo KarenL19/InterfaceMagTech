@@ -6,8 +6,8 @@ import { RectButton } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 
 // Import header and footer
-import Header from '../../components/HeaderSemIcone';
-import Footer from '../../components/FooterSemIcone';
+import Header from '../../components/HeaderWithoutIcons';
+import Footer from '../../components/FooterWithoutIcons';
 
 // Import images and icons
 import logo from '../../assets/images/logo.png';
@@ -21,7 +21,6 @@ import imageAmbulancia from '../../assets/images/ambulancia.png';
 import imageCelular from '../../assets/images/celular.png';
 
 // Import assets
-import EstilizacaoPadrao from '../../assets/styles/global';
 import styles from './styles';
 
 export default class TelasIniciais extends Component {

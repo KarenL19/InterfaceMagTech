@@ -19,7 +19,7 @@ export default class Routes extends Component {
           headerMode="none"
 
         >
-          <AppStack.Screen name="TelasIniciais" component={TelasMensagens} />
+          <AppStack.Screen name="TelasIniciais" component={TelasIniciais} />
           <AppStack.Screen name="Login" component={Login} />
           <AppStack.Screen name="Cadastro" component={Cadastro} />
           <AppStack.Screen name="Configuracoes" component={Configuracoes} />

@@ -6,7 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import TelasIniciais from './pages/TelasIniciais';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
-import TelasMensagens from './pages/TelasMensagens/PrimeiraTela/index'
+import TelasMensagens from './pages/TelasMensagens/PrimeiraTela/index';
 
 const AppStack = createStackNavigator();
 
@@ -16,7 +16,7 @@ export default class Routes extends Component {
       <NavigationContainer>
         <AppStack.Navigator
           headerMode="none"
-          
+
         >
           <AppStack.Screen name="TelasIniciais" component={TelasMensagens} />
           <AppStack.Screen name="Login" component={Login} />

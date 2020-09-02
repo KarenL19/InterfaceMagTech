@@ -7,7 +7,7 @@ import TelasIniciais from './pages/TelasIniciais';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Feed from './pages/Feed';
-import TelasMensagens from './pages/TelasMensagens/PrimeiraTela/index';
+import TelasMensagens from './pages/TelasMensagens/PrimeiraTela';
 import Configuracoes from './pages/TelasConfigurações/PrimeiraTela';
 
 const AppStack = createStackNavigator();

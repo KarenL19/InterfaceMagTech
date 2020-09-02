@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import Estilizacao from './styles';
 
 // Import Header and Footer
-import Header from '../../../components/HeaderWithIconsFmm';
+import Header from '../../../components/HeaderWithIconsFMM';
 import Footer from '../../../components/FooterWithIcons';
 
 // Import Images

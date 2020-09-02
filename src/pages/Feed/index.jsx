@@ -23,7 +23,7 @@ function TelaFeed() {
               source={iconPerfil}
               style={styles.backgroundPerfil}
             />
-            <Text>Nome do Usuário</Text>
+            <Text style={styles.usernameText}>Nome do Usuário</Text>
             <Image
               source={iconAlerta}
               style={styles.backgroundIcones}

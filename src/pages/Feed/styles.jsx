@@ -28,13 +28,20 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginTop: 15,
     backgroundColor: 'white',
-    marginLeft: 15,
   },
   postContainer: {
     height: 485,
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor: '#fff',
+  },
+  postHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  usernameText: {
+    marginTop: 15,
+    marginRight: 100,
   },
 });
 

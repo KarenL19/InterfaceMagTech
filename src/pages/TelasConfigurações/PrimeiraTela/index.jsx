@@ -1,53 +1,84 @@
 import {
-    StatusBar, Text, View, Image, StyleSheet,
-  } from 'react-native';
-  import React, { Component } from 'react';
-  import Estilizacao from '../../../styles/stylesDefault';
-
-  import { Text, View, Image } from 'react-native';
+  View, ImageBackground, StyleSheet,
+} from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../styles/stylesDefault';
-import EstilizacaoDiferenciada from '../../../styles/stylesDifferent';
+import EstilizacaoPadrao from '../../../assets/styles/global';
+import CabecalhoConfig from '../../../components/HeaderWithIconsCG';
+import prancheta from '../../../assets/images/prancheta.png';
+import ModalPrivacidade from '../../../components/ModalConfgPrivacidade';
+import ModalExame from '../../../components/ModalConfgExames';
+import styles from '../../TelasIniciais/styles';
 
 export default class PrimeiraTela extends Component {
   render() {
     return (
-      <View style={EstilizacaoPadrao.container}>
+      <View>
 
-        <View style={EstilizacaoPadrao.headerFooter} />
+        <CabecalhoConfig />
 
-        <View style={EstilizacaoPadrao.body}>
+        <View style={styles.container}>
 
-          <Text style={
-            style.mainTitle
-          }
-          >
-            COFIGURAÇÕES GERAIS
-          </Text>
+          <View style={EstilizacaoPadrao.body}>
 
-        </View>
+            <ImageBackground
+              style={style.prancheta}
+              source={prancheta}
+            >
 
-        <View style={EstilizacaoPadrao.headerFooter}>
-          <View style={{ flexDirection: 'row' }}>
-            <Image
-              style={EstilizacaoDiferenciada.imageLupa}
-              source={
-                        require('../../assets/pesquisa2.png')
-                        }
-            />
+              <View style={style.bottView}>
+                <View style={style.privacidade}>
+                  <ModalPrivacidade />
+                </View>
+                <View style={style.exames}>
+                  <ModalExame />
+                </View>
+
+              </View>
+
+            </ImageBackground>
+
           </View>
-        </View>
 
+        </View>
       </View>
+
     );
   }
 }
 
 const style = StyleSheet.create({
-    mainTitle:{
-        fontSize: 20,
-        fontStyle: 'normal',
-        position: 'relative',
-        bottom: '7%'
-    }
+
+  container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+
+  prancheta: {
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    height: 500,
+    width: 360,
+    padding: 10,
+    marginTop: 10,
+  },
+  bottView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+
+  privacidade: {
+    marginTop: 20,
+
+  },
+
+  exames: {
+    marginBottom: 100,
+  },
+
 });

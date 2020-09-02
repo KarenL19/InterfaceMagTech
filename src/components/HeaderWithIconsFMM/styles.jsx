@@ -1,23 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    height: '100%',
 
-  },
-
-  body: {
-    flex: 7,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-
-  },
   headerFooter: {
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
-    height: 62,
-
+    flex: 1,
   },
 
   imagemPerfilIcone: {
@@ -33,7 +21,6 @@ export default StyleSheet.create({
   tituloMensagensHeader: {
     fontSize: 20,
     marginLeft: 35,
-    // alignItems: "center",
     paddingTop: 45,
     color: '#000000',
     marginRight: 30,
@@ -53,7 +40,7 @@ export default StyleSheet.create({
     marginTop: 5,
 
   },
-  backgroundIcone: {
+  backgroundHeaderIcone: {
     height: 40,
     width: 40,
     backgroundColor: 'white',
@@ -62,20 +49,7 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginRight: 20,
     marginTop: 40,
-  },
-  imagemMagtechIcone: {
-    height: 35,
-    width: 35,
-    margin: 3,
-    marginBottom: 7,
-    marginLeft: 2,
-  },
 
-  footerComIcones: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginTop: -25,
-    marginLeft: 15,
   },
 
 });

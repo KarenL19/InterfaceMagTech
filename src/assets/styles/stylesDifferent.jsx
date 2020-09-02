@@ -17,4 +17,13 @@ export default StyleSheet.create({
 
   },
 
+  imageEstrela: {
+    height: 50,
+    width: 50,
+    position: 'relative',
+    top: '25%',
+    left: '20%',
+
+  },
+
 });

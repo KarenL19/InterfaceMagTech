@@ -12,8 +12,57 @@ import iconOpcoes from '../../assets/icons/botaoOpcoes.png';
 import iconCoracao from '../../assets/icons/coracaoPost.png';
 import iconCerebro from '../../assets/icons/cerebroPost.png';
 import iconCompartilhar from '../../assets/icons/compartilharPost.png';
+import imagemPost from '../../assets/images/imagemPost.png';
 
 import styles from './styles';
+
+const data = [
+  {
+    perfil: iconPerfil,
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+];
 
 function TelaFeed() {
   return (

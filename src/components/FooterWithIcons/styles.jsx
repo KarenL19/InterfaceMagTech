@@ -10,9 +10,9 @@ export default StyleSheet.create({
   },
 
   imagemLupaPostagem: {
-    height: 35,
-    width: 35,
-    margin: 2,
+    height: 30,
+    width: 30,
+    margin: 4,
   },
   imagemMenu: {
     height: 30,
@@ -46,7 +46,7 @@ export default StyleSheet.create({
   imagemMagtechIcone: {
     height: 35,
     width: 35,
-    margin: 3,
+    margin: 2,
     marginBottom: 7,
     marginLeft: 2,
   },

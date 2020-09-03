@@ -9,6 +9,9 @@ import Footer from '../../components/FooterWithIcons';
 import iconPerfil from '../../assets/icons/fotoPerfil.png';
 import iconAlerta from '../../assets/icons/botaoAlerta.png';
 import iconOpcoes from '../../assets/icons/botaoOpcoes.png';
+import iconCoracao from '../../assets/icons/coracaoPost.png';
+import iconCerebro from '../../assets/icons/cerebroPost.png';
+import iconCompartilhar from '../../assets/icons/compartilharPost.png';
 
 import styles from './styles';
 

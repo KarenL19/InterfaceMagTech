@@ -23,19 +23,11 @@ export default class PrimeiraTelaMensagem extends Component {
         <View style={EstilizacaoMensagem.body}>
           <View style={EstilizacaoMensagem.campoDePesquisa}>
 
-            <View style={[EstilizacaoMensagem.campoDeBusca]}>
+            <View style={[EstilizacaoMensagem.viewCampoDeBusca]}>
               <TextInput
                 placeholder="  Buscar"
                 placeholderTextColor="grey"
-                style={{
-                  height: 30,
-                  width: 250,
-                  borderColor: 'grey',
-                  borderWidth: 1,
-                  borderRadius: 30,
-                  marginTop: 100,
-                  marginLeft: 10,
-                }}
+                style={EstilizacaoMensagem.campoDeBusca}
               />
             </View>
 

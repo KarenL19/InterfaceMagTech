@@ -40,7 +40,7 @@ export default StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
-    marginTop: 25,
+    marginTop: 17,
   },
 
   imagemMagtechIcone: {
@@ -53,7 +53,6 @@ export default StyleSheet.create({
   footerComIcones: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-
   },
 
 });

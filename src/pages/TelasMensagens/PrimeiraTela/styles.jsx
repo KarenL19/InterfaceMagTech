@@ -59,7 +59,7 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginBottom: -80,
     marginTop: 35,
-    marginLeft: 300,
+    marginLeft: 320,
   },
 
   imagemFiltroIcone: {
@@ -107,9 +107,19 @@ export default StyleSheet.create({
     marginTop: 10,
   },
 
-  campoDeBusca: {
+  viewCampoDeBusca: {
     flex: 1,
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
+  },
+
+  campoDeBusca: {
+    height: 30,
+    width: 250,
+    borderColor: 'grey',
+    borderWidth: 1,
+    borderRadius: 30,
+    marginTop: 97,
+    marginLeft: 30,
   },
 });

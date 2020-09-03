@@ -131,10 +131,10 @@ const DATA = [
   },
 ];
 
-function TelaFeed() {
+function TelaFeed(props) {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header navigation={props.navigation} />
       <View style={styles.body}>
         <FlatList
           data={DATA}

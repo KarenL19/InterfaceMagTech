@@ -1,5 +1,7 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import {
+  Text, View, Image, FlatList,
+} from 'react-native';
 
 // Import header and footer
 import Header from '../../components/HeaderWithIconsFMM';
@@ -16,9 +18,10 @@ import imagemPost from '../../assets/images/imagemPost.png';
 
 import styles from './styles';
 
-const data = [
+const DATA = [
   {
     perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
     alerta: iconAlerta,
     opcoes: iconOpcoes,
     post: imagemPost,
@@ -28,6 +31,7 @@ const data = [
   },
   {
     perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
     alerta: iconAlerta,
     opcoes: iconOpcoes,
     post: imagemPost,
@@ -37,6 +41,7 @@ const data = [
   },
   {
     perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
     alerta: iconAlerta,
     opcoes: iconOpcoes,
     post: imagemPost,
@@ -46,6 +51,7 @@ const data = [
   },
   {
     perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
     alerta: iconAlerta,
     opcoes: iconOpcoes,
     post: imagemPost,
@@ -55,6 +61,67 @@ const data = [
   },
   {
     perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
+    alerta: iconAlerta,
+    opcoes: iconOpcoes,
+    post: imagemPost,
+    like: iconCoracao,
+    comentar: iconCerebro,
+    compartilhar: iconCompartilhar,
+  },
+  {
+    perfil: iconPerfil,
+    nomeUsuario: 'Nome do Usuário',
     alerta: iconAlerta,
     opcoes: iconOpcoes,
     post: imagemPost,
@@ -69,23 +136,48 @@ function TelaFeed() {
     <View style={styles.container}>
       <Header />
       <View style={styles.body}>
-        <View style={styles.postContainer}>
-          <View style={styles.postHeader}>
-            <Image
-              source={iconPerfil}
-              style={styles.backgroundPerfil}
-            />
-            <Text style={styles.usernameText}>Nome do Usuário</Text>
-            <Image
-              source={iconAlerta}
-              style={styles.backgroundIcones}
-            />
-            <Image
-              source={iconOpcoes}
-              style={styles.backgroundIcones}
-            />
-          </View>
-        </View>
+        <FlatList
+          data={DATA}
+          renderItem={({ item }) => (
+            <View style={styles.postContainer}>
+              <View style={styles.postHeader}>
+                <Image
+                  source={item.perfil}
+                  style={styles.backgroundPerfil}
+                />
+                <Text style={styles.usernameText}>{item.nomeUsuario}</Text>
+                <Image
+                  source={item.alerta}
+                  style={styles.backgroundHeaderIcones}
+                />
+                <Image
+                  source={item.opcoes}
+                  style={styles.backgroundHeaderIcones}
+                />
+              </View>
+              <View style={styles.viewCorpoPost}>
+                <Image
+                  source={item.post}
+                  style={styles.corpoPost}
+                />
+              </View>
+              <View style={styles.postFooter}>
+                <Image
+                  source={item.like}
+                  style={styles.backgroundFooterIcones}
+                />
+                <Image
+                  source={item.comentar}
+                  style={styles.backgroundFooterIcones}
+                />
+                <Image
+                  source={item.compartilhar}
+                  style={styles.backgroundFooterIcones}
+                />
+              </View>
+            </View>
+          )}
+        />
       </View>
       <Footer />
     </View>

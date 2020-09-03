@@ -22,6 +22,11 @@ export default class Login extends Component {
     navigation.navigate('Cadastro');
   }
 
+  handleNavigationToConfiguracoes() {
+    const { navigation } = this.props;
+    navigation.navigate('Configuracoes');
+  }
+
   toggleSwitch = value => {
     this.setState({ switchValue: value });
   };
@@ -67,7 +72,10 @@ export default class Login extends Component {
               </View>
           </View>
 
-          <RectButton style={styles.logarButton}>
+          <RectButton 
+            style={styles.logarButton}
+            onPress={() => this.handleNavigationToConfiguracoes()}
+          >
             <Text>Logar</Text>
           </RectButton>
           <TouchableOpacity onPress={() => this.handleNavigationToCadastro()}>

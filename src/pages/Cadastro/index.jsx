@@ -20,6 +20,11 @@ export default class Cadastro extends Component {
     navigation.navigate('Login');
   }
 
+  handleNavigationToConfiguracoes() {
+    const { navigation } = this.props;
+    navigation.navigate('Configuracoes');
+  }
+
   toggleSwitch = value => {
     this.setState({ switchValue: value });
   };
@@ -35,11 +40,6 @@ export default class Cadastro extends Component {
               <Image
                 source={clipboardIcon}
                 style={styles.loginIcon}
-              />
-              <TextInput
-                placeholder="Nome"
-                style={styles.input}
-                placeholderTextColor="#000"
               />
               <TextInput
                 placeholder="Email"
@@ -78,7 +78,10 @@ export default class Cadastro extends Component {
             </View>
           </View>
 
-          <RectButton style={styles.cadastrarButton}>
+          <RectButton 
+            style={styles.cadastrarButton}
+            onPress={() => this.handleNavigationToConfiguracoes()}
+          >
             <Text>Cadastrar</Text>
           </RectButton>
           <TouchableOpacity onPress={() => this.handleNavigationToLogin()}>

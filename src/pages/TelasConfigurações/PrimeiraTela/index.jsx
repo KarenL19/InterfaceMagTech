@@ -1,58 +1,73 @@
 import {
-  View, ImageBackground, StyleSheet,
+  StatusBar, Text, View, ImageBackground, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
 import EstilizacaoPadrao from '../../../assets/styles/global';
 import CabecalhoConfig from '../../../components/HeaderWithIconsCG';
+import Rodape from '../../../components/FooterWithIcons/index';
 import prancheta from '../../../assets/images/prancheta.png';
 import ModalPrivacidade from '../../../components/ModalConfgPrivacidade';
 import ModalExame from '../../../components/ModalConfgExames';
-import styles from '../../TelasIniciais/styles';
+import ModalConta from '../../../components/ModalConfgConta';
+import ModalVer from '../../../components/ModalConfgVer';
+import stylesDefault from '../../TelasIniciais/styles';
 
 export default class PrimeiraTela extends Component {
   render() {
     return (
       <View>
 
-        <CabecalhoConfig />
-
-        <View style={styles.container}>
-
-          <View style={EstilizacaoPadrao.body}>
+        <View style={stylesDefault.container}>
+          <CabecalhoConfig />
+          <View style={styles.body}>
 
             <ImageBackground
-              style={style.prancheta}
+              style={styles.prancheta}
               source={prancheta}
-            >
+            />
 
-              <View style={style.bottView}>
-                <View style={style.privacidade}>
-                  <ModalPrivacidade />
-                </View>
-                <View style={style.exames}>
-                  <ModalExame />
-                </View>
-
+            <View style={styles.topBottView}>
+              <View style={styles.topStyle}>
+                <ModalPrivacidade />
               </View>
+              <View style={styles.topStyle}>
+                <ModalVer />
+              </View>
+            </View>
 
-            </ImageBackground>
+            <View style={styles.bottomBottView}>
+              <View style={styles.bottomStyle}>
+                <ModalExame />
+              </View>
+              <View style={styles.bottomStyle}>
+                <ModalConta />
+              </View>
+            </View>
 
           </View>
-
+          <Rodape />
         </View>
+
       </View>
 
     );
   }
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
 
   container: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  body: {
+    flex: 7,
+    backgroundColor: '#D2D2D2',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+
   },
 
   prancheta: {
@@ -65,20 +80,30 @@ const style = StyleSheet.create({
     padding: 10,
     marginTop: 10,
   },
-  bottView: {
+  topBottView: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'stretch',
+    position: 'absolute',
+    marginTop: 165,
+    margin: 100,
 
   },
-
-  privacidade: {
-    marginTop: 20,
-
+  bottomBottView: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'stretch',
+    position: 'absolute',
+    bottom: 90,
+    margin: 100,
   },
-
-  exames: {
-    marginBottom: 100,
+  topStyle: {
+    marginLeft: 5,
+    margin: 30,
   },
-
+  bottomStyle: {
+    margin: 30,
+  },
 });

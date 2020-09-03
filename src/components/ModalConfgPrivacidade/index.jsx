@@ -46,7 +46,7 @@ export default class App extends Component {
             </View>
           </Modal>
         </View>
-        <View style={styles.bottView}>
+        <View>
         <TouchableHighlight
           style={styles.openButton}
           onPress={() => {
@@ -69,13 +69,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 22
   },
-  bottView:{
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 350,
-    marginRight: 150
-  },
+  
   modalView: {
     margin: 20,
     backgroundColor: "white",

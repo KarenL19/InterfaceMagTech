@@ -2,7 +2,6 @@ import {
   StatusBar, Text, View, ImageBackground, StyleSheet,
 } from 'react-native';
 import React, { Component } from 'react';
-import EstilizacaoPadrao from '../../../assets/styles/global';
 import CabecalhoConfig from '../../../components/HeaderWithIconsCG';
 import Rodape from '../../../components/FooterWithIcons/index';
 import prancheta from '../../../assets/images/prancheta.png';
@@ -18,7 +17,7 @@ export default class PrimeiraTela extends Component {
       <View>
 
         <View style={stylesDefault.container}>
-          <CabecalhoConfig />
+          <CabecalhoConfig navigation={this.props.navigation} />
           <View style={styles.body}>
 
             <ImageBackground
@@ -88,7 +87,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     marginTop: 165,
     margin: 100,
-
   },
   bottomBottView: {
     flex: 1,
@@ -96,11 +94,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'stretch',
     position: 'absolute',
-    bottom: 90,
+    bottom: 80,
     margin: 100,
   },
   topStyle: {
-    marginLeft: 5,
+    marginLeft: 30,
     margin: 30,
   },
   bottomStyle: {

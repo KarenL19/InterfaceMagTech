@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  StatusBar, Text, View, Image, StyleSheet,
+  StatusBar, Text, View, Image, StyleSheet, TouchableOpacity,
 } from 'react-native';
 
 import iconBell from '../../assets/icons/sino.png';
@@ -10,6 +10,11 @@ import iconMessage from '../../assets/icons/IconeMensagem.png';
 import Estilizacao from '../../assets/styles/global';
 
 export default class HeaderWithIconsCG extends Component {
+  handleNavigationToMensagens() {
+    const { navigation } = this.props;
+    navigation.navigate('TelasMensagens');
+  }
+
   render() {
     return (
       <View>
@@ -26,12 +31,15 @@ export default class HeaderWithIconsCG extends Component {
               source={iconBell}
             />
           </View>
-          <View style={styles.backgroundIcon}>
+          <TouchableOpacity
+            style={styles.backgroundIcon}
+            onPress={() => this.handleNavigationToMensagens()}
+          >
             <Image
               style={styles.planeIcon}
               source={iconMessage}
             />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
 

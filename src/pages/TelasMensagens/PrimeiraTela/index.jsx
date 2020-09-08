@@ -206,15 +206,10 @@ return (
     </Text> 
     </View>
    
-
-    
-    
 </ScrollView>
   </View>    
   </View>  
 </View>
 <Footer/>  
 </View>
-);
-}
-}
+)}};

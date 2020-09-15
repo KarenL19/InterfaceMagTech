@@ -4,8 +4,8 @@ import {
   Modal,
   StyleSheet,
   Text,
-  TouchableHighlight,
-  View,
+  TouchableHighlight, 
+  View, 
   Image
 } from "react-native";
 import Opcoes from "../../assets/icons/botaoOpcoes.png"

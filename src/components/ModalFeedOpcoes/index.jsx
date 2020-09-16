@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
   TouchableHighlight, 
-  View, 
+  View,   
   Image
 } from "react-native";
 import Opcoes from "../../assets/icons/botaoOpcoes.png"

@@ -73,7 +73,7 @@ export default class PrimeiraTelaMensagem extends Component {
                   />
                   <Text style={EstilizacaoMensagem.nomeUsuario}>
                     Nome do usuário 
-                  </Text>
+                  </Text> 
                   <Text style={EstilizacaoMensagem.mensagemUsuario}>
                     Olá, tudo bem?
                     {' '}

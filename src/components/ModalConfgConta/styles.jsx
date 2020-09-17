@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   viewInput: {
     alignItems: 'center',
   },
-  closeButton: {
+  saveButton: {
     backgroundColor: '#34CBC5',
     borderRadius: 20,
     padding: 10,
@@ -75,6 +75,28 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
+  },
+  titleModal: {
+    backgroundColor: '#FFE6E6',
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+    borderWidth: 1,
+  },
+  imageExitIcon: {
+    height: 30,
+    width: 30,
+    
+    
+       
+  },
+  exitButton: {
+    borderRadius: 10,
+    elevation: 2,
+    borderWidth: 1,
+    marginLeft: 250,
+    borderColor: '#fff',
+
   },
 });
 

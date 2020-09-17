@@ -8,10 +8,12 @@ import {
   View,
   Image,
   TextInput,
+  Keyboard,
 } from "react-native";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from "./styles"
 import { TouchableOpacity } from "react-native-gesture-handler";
+import fechar from "../../assets/icons/exit.png"
 
 export default class App extends Component {
   state = {
@@ -37,6 +39,19 @@ export default class App extends Component {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
+              <TouchableHighlight
+                  style={styles.exitButton}
+                  onPress={() => {
+                    this.setModalVisible(!modalVisible);
+                  }}
+                >
+                <Image style={styles.imageExitIcon}
+                source={fechar}
+                />
+                </TouchableHighlight>
+                <View style={styles.titleModal}>
+                <Text style={styles.textStyle}>Conta         </Text>                
+                </View>
               <KeyboardAwareScrollView>
           
             <View style={styles.viewInput}>
@@ -64,7 +79,7 @@ export default class App extends Component {
         </View>
 
                 <TouchableHighlight
-                  style={styles.closeButton}
+                  style={styles.saveButton}
                   onPress={() => {
                     this.setModalVisible(!modalVisible);
                   }}

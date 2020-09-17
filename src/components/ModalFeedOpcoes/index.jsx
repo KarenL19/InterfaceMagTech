@@ -35,16 +35,17 @@ export default class App extends Component {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={styles.modalText}>Hello World!</Text>
+                
+                <Image 
+                style={styles.openButtonModal}
+                source={Opcoes}
+                />
 
-                <TouchableHighlight
-                  style={{ ...styles.openButton, backgroundColor: "#34CBC5" }}
-                  onPress={() => {
-                    this.setModalVisible(!modalVisible);
-                  }}
-                >
-                  <Text style={styles.textStyle}>Salvar Alterações</Text>
-                </TouchableHighlight>
+                <Text style={styles.openButtonModal}>Teste</Text>
+                <Text></Text>
+                <Text></Text>
+                <Text></Text>
+
               </View>
             </View>
           </Modal>
@@ -84,24 +85,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
     shadowColor: "#000",
     shadowOffset: {
-      width: 0,
-      height: 2
+    width: 0,
+    height: 2
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5
   },
   openButton: {
-    
-    height: 30,
-    width: 30,
+    height: 40,
+    width: 40,
     backgroundColor: 'white',
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
     marginRight: 15,
-    marginLeft: 50,
-    marginTop: 30,
+    marginLeft: 30,
+   
   },
   textStyle: {
     color: "black",
@@ -113,10 +113,31 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   imagemMenu: {
-    height: 30,
-    width: 30,
-    margin: 1,
-    marginTop: 1,
-  }
+    height: 38,
+    width: 38, 
+  },
+  
+  openButtonModal: {
+    height: 40,
+    width: 40,
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginRight: 15,
+    marginLeft: 15,
+    marginTop: 10,
+  },
 
+  textoModal: {
+    height: 40,
+    width: 40,
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginRight: 15,
+    marginLeft: 15,
+    marginTop: 10,
+  },
 });

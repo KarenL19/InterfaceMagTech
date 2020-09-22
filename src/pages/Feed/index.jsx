@@ -8,7 +8,6 @@ import Footer from '../../components/FooterWithIcons';
 // Import icons and images
 import iconPerfil from '../../assets/icons/fotoPerfil.png';
 import iconAlerta from '../../assets/icons/botaoAlerta.png';
-import iconOpcoes from '../../assets/icons/botaoOpcoes.png';
 
 //Import components
 import ModalOpcoes from '../../components/ModalFeedOpcoes';

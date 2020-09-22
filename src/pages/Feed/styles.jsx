@@ -20,13 +20,15 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
-    marginTop: 25,
+    marginTop: 22,
+    marginLeft: 20
   },
   backgroundPerfil: {
     height: 40,
     width: 40,
     borderRadius: 50,
     marginTop: 15,
+    marginLeft: 10,
     backgroundColor: 'white',
   },
   postContainer: {
@@ -37,11 +39,10 @@ const styles = StyleSheet.create({
   },
   postHeader: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
   usernameText: {
-    marginTop: 15,
-    marginRight: 100,
+    marginTop: 25,
   },
 });
 

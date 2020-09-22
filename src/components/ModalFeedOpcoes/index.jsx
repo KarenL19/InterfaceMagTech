@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import {
   Alert,
   Modal,
-  StyleSheet,
   Text,
   TouchableHighlight, 
   View,   
   Image
 } from "react-native";
+
+import styles from "./styles";
 import Opcoes from "../../assets/icons/botaoOpcoes.png"
 
 
@@ -40,11 +41,18 @@ export default class App extends Component {
                 style={styles.openButtonModal}
                 source={Opcoes}
                 />
-
-                <Text style={styles.openButtonModal}>Teste</Text>
-                <Text></Text>
-                <Text></Text>
-                <Text></Text>
+                <View style={styles.barraCinza}>
+                <Text style={styles.textoModal}>Ocultar anúncio</Text>
+                </View>
+                <View style={styles.barraCinza}>
+                <Text style={styles.textoModal}>Copiar link</Text>
+                </View>
+                <View style={styles.barraCinza}>
+                <Text style={styles.textoModal}>Enviar mensagem privada</Text>
+                </View>
+                <View style={styles.barraCinza}>
+                <Text style={styles.textoModal}>Salvar publicação</Text>
+                </View>
 
               </View>
             </View>
@@ -69,75 +77,3 @@ export default class App extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 22
-  },
-  
-  modalView: {
-    margin: 20,
-    backgroundColor: "white",
-    borderRadius: 20,
-    padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-    width: 0,
-    height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5
-  },
-  openButton: {
-    height: 40,
-    width: 40,
-    backgroundColor: 'white',
-    borderColor: 'black',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginRight: 15,
-    marginLeft: 30,
-   
-  },
-  textStyle: {
-    color: "black",
-    fontWeight: "bold",
-    textAlign: "center"
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: "center"
-  },
-  imagemMenu: {
-    height: 38,
-    width: 38, 
-  },
-  
-  openButtonModal: {
-    height: 40,
-    width: 40,
-    backgroundColor: 'white',
-    borderColor: 'black',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginRight: 15,
-    marginLeft: 15,
-    marginTop: 10,
-  },
-
-  textoModal: {
-    height: 40,
-    width: 40,
-    backgroundColor: 'white',
-    borderColor: 'black',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginRight: 15,
-    marginLeft: 15,
-    marginTop: 10,
-  },
-});

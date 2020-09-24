@@ -86,9 +86,7 @@ const styles = StyleSheet.create({
   imageExitIcon: {
     height: 30,
     width: 30,
-    
-    
-       
+
   },
   exitButton: {
     borderRadius: 10,

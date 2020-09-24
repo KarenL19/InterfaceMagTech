@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 10,
     backgroundColor: '#fff',
-    alignItems:'center',
+    alignItems: 'center',
   },
   viewSelect: {
     height: 40,
@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 10,
     backgroundColor: '#fff',
-    alignItems:'center',
-    borderColor: '#000000'
+    alignItems: 'center',
+    borderColor: '#000000',
   },
   touch: {
     height: 40,

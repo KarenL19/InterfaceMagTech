@@ -13,6 +13,7 @@ import {
 import fechar from "../../assets/icons/exit.png"
 import styles from "./styles"
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import { FlatList, ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import RNPickerSelect from 'react-native-picker-select';
 
 
@@ -53,7 +54,7 @@ export default class App extends Component {
                 <View style={styles.titleModal}>
                 <Text style={styles.textStyle}>Privacidade         </Text>                
                 </View>
-              <KeyboardAwareScrollView>
+              
           
             <View style={styles.viewInput}>
             <Text style={styles.titleInput}>Quem pode ver meu perfil?</Text>
@@ -83,17 +84,40 @@ export default class App extends Component {
                 { label: 'Volto logo', value: 'Apenas meus contatos' },
             ]}
         />
-                </View>            
+                </View>
+                <View style={styles.viewGeralBlock}>
+                
+                <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View>
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View> 
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View> 
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View>           
+        </View>
               </View>          
-        </KeyboardAwareScrollView>
+        
 
                 <TouchableHighlight
-                  style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+                  style={styles.saveButton}
                   onPress={() => {
                     this.setModalVisible(!modalVisible);
                   }}
                 >
-                  <Text style={styles.textStyle}>Fechar Modal</Text>
+                  <Text style={styles.textStyle}>Salvar Alterações</Text>
                 </TouchableHighlight>
               </View>
             </View>

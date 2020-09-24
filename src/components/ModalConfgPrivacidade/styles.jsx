@@ -21,15 +21,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#000000',
   },
-  touch: {
-    height: 40,
+  viewBlock: {
+    height: 30,
     textAlign: 'center',
-    marginTop: 10,
+    marginTop: 2,
     borderBottomWidth: 2,
     backgroundColor: '#fff',
-    width: 150,
+    width: 200,
     borderColor: '#dcdcdc',
     alignItems: 'center',
+  },
+
+  textBlock: {
+    fontSize: 17,
   },
 
   viewInput: {
@@ -44,7 +48,16 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   viewTouch: {
-    marginTop: 50,
+    marginTop: 15,
+    marginBottom: 15,
+    marginLeft: 15,
+    marginRight: 15,
+  },
+  viewGeralBlock: {
+    borderColor: '#dcdcdc',
+    borderWidth: 1,
+    marginTop: 20,
+    marginBottom: 50,
   },
   titleInput: {
     marginTop: 30,

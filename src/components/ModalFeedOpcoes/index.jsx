@@ -42,8 +42,9 @@ export default class App extends Component {
                 source={Opcoes}
                 />
                 <View style={styles.barraCinza}>
-                <Text style={styles.textoModal}>Ocultar anúncio</Text>
+                <Text style={styles.textoModal}>Ocultar anúncio </Text>
                 </View>
+                
                 <View style={styles.barraCinza}>
                 <Text style={styles.textoModal}>Copiar link</Text>
                 </View>

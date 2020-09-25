@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     height: '100%',
-    
+   
 },
 
   centeredView: {
@@ -49,6 +49,7 @@ export default StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center"
+    
   },
   imagemMenu: {
     height: 38,
@@ -70,17 +71,19 @@ export default StyleSheet.create({
   textoModal: {
     height: 40,
     width: 40,
-    marginRight: 15,
-    marginLeft: 20,
-    marginTop: 20,   
+    marginLeft: 30,
+    marginTop: 40,   
+    marginHorizontal: 80,
     
-  }, 
+    }, 
 
-  barraCinza:{
-    //alignItems: "center",
+  barraCinza:{ 
+    height: 100,
+    width:100,
     borderBottomWidth: 1.5,
     borderBottomColor: "#dcdcdc",
-    paddingTop: 10 
+    paddingTop: 10,
+    
   }
  
 });

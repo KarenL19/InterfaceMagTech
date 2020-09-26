@@ -13,7 +13,7 @@ import {
 import fechar from "../../assets/icons/exit.png"
 import styles from "./styles"
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { FlatList, ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import {ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import RNPickerSelect from 'react-native-picker-select';
 
 
@@ -70,7 +70,7 @@ export default class App extends Component {
             ]}
         />
         </View>
-              <Text style={styles.titleInput}>Número de telefone:</Text>
+              <Text style={styles.titleInput}>Status:</Text>
               <View>
               <RNPickerSelect
             style={styles.viewSelect}
@@ -85,8 +85,9 @@ export default class App extends Component {
             ]}
         />
                 </View>
+                <Text style={styles.titleInput}>Pessoas bloqueadas:</Text>
                 <View style={styles.viewGeralBlock}>
-                
+                <ScrollView>
                 <View style={styles.viewTouch}>
         <TouchableOpacity style={styles.viewBlock}>
         <Text style={styles.textBlock}>Usuário bloqueado</Text>
@@ -106,8 +107,10 @@ export default class App extends Component {
         <TouchableOpacity style={styles.viewBlock}>
         <Text style={styles.textBlock}>Usuário bloqueado</Text>
         </TouchableOpacity>
-        </View>           
+        </View> 
+        </ScrollView>          
         </View>
+        
               </View>          
         
 

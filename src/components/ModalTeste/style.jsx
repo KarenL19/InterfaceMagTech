@@ -56,12 +56,12 @@ const styles = StyleSheet.create({
   viewGeralBlock: {
     borderColor: '#dcdcdc',
     borderWidth: 1,
-    marginTop: 25,
+    marginTop: 20,
+    marginBottom: 50,
     height: 110,
   },
   titleInput: {
     marginTop: 30,
-    fontSize: 20,
   },
   centeredView: {
     flex: 1,

@@ -9,6 +9,7 @@ import Cadastro from './pages/Cadastro';
 import Feed from './pages/Feed';
 import TelasMensagens from './pages/TelasMensagens/PrimeiraTela';
 import Configuracoes from './pages/TelasConfigurações/PrimeiraTela';
+import Teste from './pages/teste';
 
 const AppStack = createStackNavigator();
 

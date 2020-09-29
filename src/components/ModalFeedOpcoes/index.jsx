@@ -26,6 +26,10 @@ export default class App extends Component {
     return (
       <View>
         <View style={styles.centeredView}>
+	        <TouchableHighlight style={styles.openButton} onPress={() => {
+            this.setModalVisible(true);
+           }}>
+            
           <Modal
             animationType="slide"
             transparent={true}
@@ -41,36 +45,37 @@ export default class App extends Component {
                 style={styles.openButtonModal}
                 source={Opcoes}
                 />
-                <View style={styles.barraCinza}>
-                <Text style={styles.textoModal}>Ocultar anúncio </Text>
+                
+                <View style={styles.textoModal}>
+                <Text style={styles.barraCinza}>Ocultar anúncio </Text>
                 </View>
                 
-                <View style={styles.barraCinza}>
-                <Text style={styles.textoModal}>Copiar link</Text>
+                <View style={styles.textoModal}>
+                <Text style={styles.barraCinza}>Copiar link</Text>
                 </View>
-                <View style={styles.barraCinza}>
-                <Text style={styles.textoModal}>Enviar mensagem privada</Text>
+
+                <View style={styles.textoModal}>
+                <Text style={styles.barraCinza}>Enviar mensagem privada</Text>
                 </View>
-                <View style={styles.barraCinza}>
-                <Text style={styles.textoModal}>Salvar publicação</Text>
+
+                <View style={styles.textoModal}>
+                <Text style={styles.barraCinza}>Salvar publicação</Text>
                 </View>
+                
 
               </View>
             </View>
           </Modal>
-        </View>
+          </TouchableHighlight>
+          </View>
         <View>
-        <TouchableHighlight style={styles.openButton} onPress={() => {
-            this.setModalVisible(true);
-          }}>
-            
+      
             <Image
             style={styles.imagemMenu}
             source={Opcoes}
-          />
+            />
             
             
-        </TouchableHighlight>
         </View>
         </View>
 

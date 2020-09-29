@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
-    marginTop: 22,
+    marginTop: 15,
     marginLeft: 20
   },
   backgroundPerfil: {

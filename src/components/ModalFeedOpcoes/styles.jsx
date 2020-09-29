@@ -37,7 +37,7 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     marginRight: 10,
-    marginBottom: 20,
+    marginTop: 25,
    
   },
   textStyle: {
@@ -47,13 +47,14 @@ export default StyleSheet.create({
 
   },
   modalText: {
-    marginBottom: 15,
+    marginBottom: 100,
     textAlign: "center"
     
   },
   imagemMenu: {
     height: 38,
-    width: 38, 
+    width: 38,
+   
   },
   
   openButtonModal: {
@@ -70,20 +71,30 @@ export default StyleSheet.create({
 
   textoModal: {
     height: 40,
-    width: 40,
-    marginLeft: 30,
-    marginTop: 40,   
-    marginHorizontal: 80,
+    width: 60,
+    marginRight: 220,
+    marginTop: 50,
+   // borderBottomWidth: 1.5,
+  //  borderBottomColor: "#dcdcdc",
+       
     
     }, 
 
   barraCinza:{ 
     height: 100,
-    width:100,
+    width: 200,
+    marginHorizontal: 45,
+    textAlign: "center"
+    
+  },
+
+  barraCinzaMesmo:{
+    height: 40,
+    width: 70,
+    marginRight: 220,
+    marginTop: 50,
     borderBottomWidth: 1.5,
     borderBottomColor: "#dcdcdc",
-    paddingTop: 10,
-    
   }
  
 });

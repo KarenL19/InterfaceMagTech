@@ -9,6 +9,7 @@ import Cadastro from './pages/Cadastro';
 import Feed from './pages/Feed';
 import TelasMensagens from './pages/TelasMensagens/PrimeiraTela';
 import Configuracoes from './pages/TelasConfigurações/PrimeiraTela';
+import Perfil from './pages/TelaPerfil/index';
 
 const AppStack = createStackNavigator();
 
@@ -20,12 +21,13 @@ export default class Routes extends Component {
           headerMode="none"
 
         >
-          <AppStack.Screen name="Feed" component={Feed} />
+          <AppStack.Screen name="Perfil" component={Perfil} />
           <AppStack.Screen name="Configuracoes" component={Configuracoes} />
           <AppStack.Screen name="TelasIniciais" component={TelasIniciais} />
           <AppStack.Screen name="Cadastro" component={Cadastro} />
           <AppStack.Screen name="Login" component={Login} />
           <AppStack.Screen name="TelasMensagens" component={TelasMensagens} />
+          <AppStack.Screen name="Feed" component={Feed} />
         </AppStack.Navigator>
       </NavigationContainer>
     );

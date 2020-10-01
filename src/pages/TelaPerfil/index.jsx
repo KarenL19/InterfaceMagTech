@@ -16,6 +16,7 @@ import iconAlerta from '../../assets/icons/botaoAlerta.png';
 
 //Import styles
 import styles from './styles';
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 
@@ -24,6 +25,7 @@ return (
   <View style={styles.container}>
     <Header />
     <View style={styles.body}>
+    <ScrollView>
       <View style={styles.postContainer}>
         <View style={styles.postHeader}>
           <Image
@@ -37,7 +39,24 @@ return (
           />
           
         </View>
+        
+        <View style={styles.postContainer2}>  
+        <View style={styles.postHeader}>
+          <Image
+            source={iconPerfil}
+            style={styles.backgroundPerfil}
+          />
+          <Text style={styles.usernameText}>Nome do Usuário</Text>
+          <Image
+            source={iconAlerta}
+            style={styles.backgroundIcones}
+          />
+          
+        </View>
+        </View>
+        
       </View>
+      </ScrollView>
     </View>
     <Footer />
   </View>

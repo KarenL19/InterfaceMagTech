@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#D0D0D0',
     alignItems: 'center',
     justifyContent: 'space-between',
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
   backgroundIcones: {
     height: 40,
@@ -32,11 +32,25 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   postContainer: {
-    height: 485,
+    height: 120,
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor: '#fff',
+    marginTop: 300,
+    justifyContent: "space-between",
   },
+
+  postContainer2: {
+    justifyContent: "space-between",
+    height: 120,
+    width: deviceWidth,
+    borderWidth: 1,
+    marginTop: 80,
+    backgroundColor: '#fff',
+    
+  },
+
+
   postHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',

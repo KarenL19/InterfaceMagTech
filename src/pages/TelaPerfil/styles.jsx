@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   postContainer: {
-    height: 120,
+    justifyContent: "space-between",
+    height: 160,
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor: '#fff',
-    marginTop: 300,
-    justifyContent: "space-between",
+    marginTop: 130,
   },
 
   postContainer2: {
@@ -45,9 +45,18 @@ const styles = StyleSheet.create({
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
-    marginTop: 80,
+    marginTop: 60,
     backgroundColor: '#fff',
-    
+  },
+
+  postContainer3: {
+    justifyContent: "space-between",
+    height: 120,
+    width: deviceWidth,
+    borderWidth: 1,
+    marginTop: 20,
+    backgroundColor: '#fff',
+    marginBottom: 20
   },
 
 
@@ -56,7 +65,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   usernameText: {
-    marginTop: 25,
+    marginTop: 100,
+    fontWeight: "bold",
+    fontSize: 15,
+    marginLeft: 120 
+    
   },
 });
 

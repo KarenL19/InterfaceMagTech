@@ -28,15 +28,9 @@ return (
     <ScrollView>
       <View style={styles.postContainer}>
         <View style={styles.postHeader}>
-          <Image
-            source={iconPerfil}
-            style={styles.backgroundPerfil}
-          />
+          
           <Text style={styles.usernameText}>Nome do Usuário</Text>
-          <Image
-            source={iconAlerta}
-            style={styles.backgroundIcones}
-          />
+          
           
         </View>
         
@@ -46,7 +40,22 @@ return (
             source={iconPerfil}
             style={styles.backgroundPerfil}
           />
-          <Text style={styles.usernameText}>Nome do Usuário</Text>
+          <Text>Nome do Usuário</Text>
+          <Image
+            source={iconAlerta}
+            style={styles.backgroundIcones}
+          />
+          
+        </View>
+        </View>
+
+        <View style={styles.postContainer3}>  
+        <View style={styles.postHeader}>
+          <Image
+            source={iconPerfil}
+            style={styles.backgroundPerfil}
+          />
+          <Text>Nome do Usuário</Text>
           <Image
             source={iconAlerta}
             style={styles.backgroundIcones}

@@ -32,12 +32,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   postContainer: {
-    justifyContent: "space-between",
     height: 160,
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor: '#fff',
-    marginTop: 130,
+    marginBottom: 150,
   },
 
   postContainer2: {
@@ -56,9 +55,20 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginTop: 20,
     backgroundColor: '#fff',
-    marginBottom: 20
+    marginBottom: 20,
+    flexDirection: "column"
   },
 
+  fotoContainer: {
+    height: 200,
+    width: 200,
+    borderWidth: 1,
+    marginTop: 50,
+    backgroundColor: '#fff',
+    marginLeft: 90,
+    borderRadius:100,
+    
+  },
 
   postHeader: {
     flexDirection: 'row',

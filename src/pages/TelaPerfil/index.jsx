@@ -26,12 +26,16 @@ return (
     <Header />
     <View style={styles.body}>
     <ScrollView>
-      <View style={styles.postContainer}>
+
+    <View style={styles.fotoContainer}>  
         <View style={styles.postHeader}>
           
+        </View>
+        </View>
+
+      <View style={styles.postContainer}>
+        <View style={styles.postHeader}>
           <Text style={styles.usernameText}>Nome do Usuário</Text>
-          
-          
         </View>
         
         <View style={styles.postContainer2}>  

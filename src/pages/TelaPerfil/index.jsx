@@ -26,7 +26,8 @@ return (
     <Header />
     <View style={styles.body}>
     <ScrollView>
-
+    
+    <View style={styles.englobar}>  
     <View style={styles.fotoContainer}>  
         <View style={styles.postHeader}>
           
@@ -37,19 +38,20 @@ return (
         <View style={styles.postHeader}>
           <Text style={styles.usernameText}>Nome do Usuário</Text>
         </View>
-        
+
         <View style={styles.postContainer2}>  
         <View style={styles.postHeader}>
           <Image
             source={iconPerfil}
             style={styles.backgroundPerfil}
-          />
+            />
           <Text>Nome do Usuário</Text>
           <Image
             source={iconAlerta}
             style={styles.backgroundIcones}
-          />
+            />
           
+            </View>
         </View>
         </View>
 

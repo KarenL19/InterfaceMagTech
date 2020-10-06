@@ -31,12 +31,16 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     backgroundColor: 'white',
   },
+  
   postContainer: {
+    flex: 4, 
     height: 160,
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor: '#fff',
-    marginBottom: 150,
+    marginBottom: 138,
+    //justifyContent: "space-between",
+    //marginTop: -40 
   },
 
   postContainer2: {
@@ -44,7 +48,7 @@ const styles = StyleSheet.create({
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
-    marginTop: 60,
+    marginTop: -118,
     backgroundColor: '#fff',
   },
 
@@ -55,25 +59,28 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginTop: 20,
     backgroundColor: '#fff',
-    marginBottom: 20,
-    flexDirection: "column"
+    marginBottom: 60,
+    //flexDirection: "column"
   },
 
+
   fotoContainer: {
+    flex: 2,
     height: 200,
     width: 200,
     borderWidth: 1,
-    marginTop: 50,
+    marginTop: 60,
     backgroundColor: '#fff',
     marginLeft: 90,
     borderRadius:100,
-    
+    justifyContent: "flex-start",
   },
 
   postHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+ 
   usernameText: {
     marginTop: 100,
     fontWeight: "bold",
@@ -81,6 +88,13 @@ const styles = StyleSheet.create({
     marginLeft: 120 
     
   },
+
+   englobar: {
+     flex: 5,
+     justifyContent: "flex-start",
+     alignContent: "flex-start",
+     flexDirection: 'column',
+   },
 });
 
 export default styles;

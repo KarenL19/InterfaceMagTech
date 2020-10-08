@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     height: 160,
     width: deviceWidth,
     borderWidth: 1,
-    backgroundColor: '#fff',
-    marginBottom: 138,
+    backgroundColor:  '#fff',
+    //marginBottom: 138,
     //justifyContent: "space-between",
-    //marginTop: -40 
+    marginTop: -80 
   },
 
   postContainer2: {
@@ -48,8 +48,9 @@ const styles = StyleSheet.create({
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
-    marginTop: -118,
+    marginTop: 60,
     backgroundColor: '#fff',
+    
   },
 
   postContainer3: {
@@ -69,11 +70,12 @@ const styles = StyleSheet.create({
     height: 200,
     width: 200,
     borderWidth: 1,
-    marginTop: 60,
+    marginTop: 100,
     backgroundColor: '#fff',
-    marginLeft: 90,
+    marginLeft: 85,
     borderRadius:100,
     justifyContent: "flex-start",
+    zIndex: 999
   },
 
   postHeader: {
@@ -89,12 +91,7 @@ const styles = StyleSheet.create({
     
   },
 
-   englobar: {
-     flex: 5,
-     justifyContent: "flex-start",
-     alignContent: "flex-start",
-     flexDirection: 'column',
-   },
+   
 });
 
 export default styles;

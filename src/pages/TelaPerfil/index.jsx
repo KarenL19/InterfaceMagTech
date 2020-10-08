@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 
 // Import header and footer
-import Header from '../../components/HeaderWithIconsFMM';
+import Header from '../../components/HeaderWithIconsPerfil';
 import Footer from '../../components/FooterWithIcons';
 
 // Import icons and images
@@ -23,11 +23,10 @@ import { ScrollView } from 'react-native-gesture-handler';
 function Perfil() {
 return (
   <View style={styles.container}>
-    <Header />
+    <Header /> 
     <View style={styles.body}>
     <ScrollView>
     
-    <View style={styles.englobar}>  
     <View style={styles.fotoContainer}>  
         <View style={styles.postHeader}>
           
@@ -51,7 +50,7 @@ return (
             style={styles.backgroundIcones}
             />
           
-            </View>
+            
         </View>
         </View>
 

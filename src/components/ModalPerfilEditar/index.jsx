@@ -47,22 +47,14 @@ export default class App extends Component {
                 />
                 
                 <View style={styles.textoModal}>
-                <Text style={styles.barraCinza}>Ocultar anúncio </Text>
+                <Text style={styles.barraCinza}>Editar perfil </Text>
+                </View>
+                                               
+                <View style={styles.textoModal}>
+                <Text style={styles.barraCinza}>Salvar alterações</Text>
                 </View>
                 
-                <View style={styles.textoModal}>
-                <Text style={styles.barraCinza}>Copiar link</Text>
-                </View>
-
-                <View style={styles.textoModal}>
-                <Text style={styles.barraCinza}>Enviar mensagem privada</Text>
-                </View>
-
-                <View style={styles.textoModal}>
-                <Text style={styles.barraCinza}>Salvar publicação</Text>
-                </View>
-                
-
+ 
               </View>
             </View>
           </Modal>

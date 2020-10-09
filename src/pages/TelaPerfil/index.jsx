@@ -11,8 +11,7 @@ import iconPerfil from '../../assets/icons/fotoPerfil.png';
 import barraSaude from '../../assets/images/barraSaude.png';
 
 //Import components
-
-
+import ModalBisturi from '../../components/ModalPerfilEditar';
 
 //Import styles
 import styles from './styles';
@@ -39,7 +38,12 @@ return (
 
       <View style={styles.postContainer}>
         <View style={styles.postHeader}>
-          <Text style={styles.usernameText}>Nome do Usuário</Text>
+          <View>
+            <ModalBisturi/>
+            <Text style={styles.usernameText}>Nome do Usuário</Text>
+          </View>
+          
+          
         </View>
 
         <View style={styles.postContainer2}>  

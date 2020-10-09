@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 import styles from "./styles";
-import Opcoes from "../../assets/icons/botaoOpcoes.png"
+import bisturi from "../../assets/icons/bisturi.png"
 
 
 export default class App extends Component {
@@ -43,7 +43,7 @@ export default class App extends Component {
                 
                 <Image 
                 style={styles.openButtonModal}
-                source={Opcoes}
+                source={bisturi}
                 />
                 
                 <View style={styles.textoModal}>
@@ -72,7 +72,7 @@ export default class App extends Component {
       
             <Image
             style={styles.imagemMenu}
-            source={Opcoes}
+            source={bisturi}
             />
             
             

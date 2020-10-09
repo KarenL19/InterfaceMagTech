@@ -30,13 +30,13 @@ export default StyleSheet.create({
     elevation: 5
   },
   openButton: {
-    height: 40,
-    width: 40,
+    height: 45,
+    width: 45,
     backgroundColor: 'white',
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 5,
-    marginRight: 10,
+    marginLeft: 320,
     marginTop: 25,
    
   },
@@ -54,7 +54,8 @@ export default StyleSheet.create({
   imagemMenu: {
     height: 38,
     width: 38,
-   
+    marginTop:-6, 
+    marginLeft: 323
   },
   
   openButtonModal: {

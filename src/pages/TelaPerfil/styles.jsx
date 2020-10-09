@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     width: deviceWidth,
     borderWidth: 1,
     backgroundColor:  '#fff',
-    //marginBottom: 138,
     //justifyContent: "space-between",
     marginTop: -80 
   },
@@ -49,7 +48,7 @@ const styles = StyleSheet.create({
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
-    marginTop: 60,
+    marginTop: 48,
     backgroundColor: '#fff',
     justifyContent: "center",
     
@@ -86,7 +85,7 @@ const styles = StyleSheet.create({
   },
  
   usernameText: {
-    marginTop: 100,
+    marginTop: 60,
     fontWeight: "bold",
     fontSize: 15,
     marginLeft: 120 
@@ -117,8 +116,12 @@ const styles = StyleSheet.create({
   viewBarraSaude:{
     marginTop: 30,
     marginRight: 60
-  }
+  },
    
+  viewUsernameText:{
+    //marginRight: -50
+  }
+
 });
 
 export default styles;

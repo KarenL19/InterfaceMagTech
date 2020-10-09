@@ -23,13 +23,14 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginLeft: 20
   },
-  backgroundPerfil: {
-    height: 40,
-    width: 40,
+  fotoPerfil: {
+    height: 160,
+    width: 160,
     borderRadius: 50,
-    marginTop: 15,
-    marginLeft: 10,
+    marginTop: 25,
+    marginLeft: 20,
     backgroundColor: 'white',
+    //resizeMode: "stretch"
   },
   
   postContainer: {
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginTop: 60,
     backgroundColor: '#fff',
+    justifyContent: "center",
     
   },
 
@@ -90,7 +92,32 @@ const styles = StyleSheet.create({
     marginLeft: 120 
     
   },
+  sobreMimText:{
+    fontWeight: "bold",
+    fontSize: 16,
+    marginLeft: 28, 
+    
+  },
 
+  barraSaudeText:{
+    fontWeight: "bold",
+    fontSize: 15,
+    marginLeft: 28, 
+    marginTop: 15
+  },
+
+  barraSaude:{
+    resizeMode: "contain",
+    //paddingRight: 100 
+    marginLeft: -255,
+    marginTop: 30
+  
+  },
+
+  viewBarraSaude:{
+    marginTop: 30,
+    marginRight: 60
+  }
    
 });
 

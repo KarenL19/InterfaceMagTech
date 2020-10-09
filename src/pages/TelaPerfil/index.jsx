@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, ImageBackground } from 'react-native';
 
 // Import header and footer
 import Header from '../../components/HeaderWithIconsPerfil';
@@ -8,7 +8,7 @@ import Footer from '../../components/FooterWithIcons';
 
 // Import icons and images
 import iconPerfil from '../../assets/icons/fotoPerfil.png';
-import iconAlerta from '../../assets/icons/botaoAlerta.png';
+import barraSaude from '../../assets/images/barraSaude.png';
 
 //Import components
 
@@ -29,8 +29,12 @@ return (
     
     <View style={styles.fotoContainer}>  
         <View style={styles.postHeader}>
-          
+        <Image
+            source={iconPerfil}
+            style={styles.fotoPerfil}
+            />
         </View>
+       
         </View>
 
       <View style={styles.postContainer}>
@@ -40,15 +44,10 @@ return (
 
         <View style={styles.postContainer2}>  
         <View style={styles.postHeader}>
-          <Image
-            source={iconPerfil}
-            style={styles.backgroundPerfil}
-            />
-          <Text>Nome do Usuário</Text>
-          <Image
-            source={iconAlerta}
-            style={styles.backgroundIcones}
-            />
+         
+          <Text style={styles.sobreMimText}>Sobre mim: Olá me chamo "usuário", sou portador do
+            tipo sanguíneo "A+" e pratico exercícios de cardio.
+          </Text>
           
             
         </View>
@@ -56,16 +55,16 @@ return (
 
         <View style={styles.postContainer3}>  
         <View style={styles.postHeader}>
-          <Image
-            source={iconPerfil}
-            style={styles.backgroundPerfil}
-          />
-          <Text>Nome do Usuário</Text>
-          <Image
-            source={iconAlerta}
-            style={styles.backgroundIcones}
-          />
           
+          <Text style={styles.barraSaudeText}>Força do seu perfil baseado na sua saúde:</Text>
+          
+          <View style={styles.viewBarraSaude}>
+          <Image 
+            source={barraSaude}
+            style={styles.barraSaude}>
+          </Image>
+          </View>
+
         </View>
         </View>
         

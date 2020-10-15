@@ -16,21 +16,30 @@ import Footer from '../../components/FooterWithoutIcons';
 
 function Login(props) {
   const [switchValue, setSwitchValue] = useState();
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [error, setError] = useState('');
 
-  useEffect(() => {
-    api.get('logins').then((response) => {
-      console.log(response.data[0].email);
-    });
-  }, []);
+  async function handleSignInPress() {
+    if (email.length === 0 || senha.length === 0) {
+      setError('Preencha usuário e senha para continuar!');
+    } else {
+      try {
+        await api.post('/logins/login', {
+          email,
+          senha,
+        });
+        const { navigation } = props;
+        navigation.navigate('Feed');
+      } catch (_err) {
+        setError('Houve um problema com o login, verifique suas credenciais!');
+      }
+    }
+  }
 
   function handleNavigationToCadastro() {
     const { navigation } = props;
     navigation.navigate('Cadastro');
-  }
-
-  function handleNavigationToConfiguracoes() {
-    const { navigation } = props;
-    navigation.navigate('Configuracoes');
   }
 
   const toggleSwitch = (value) => {
@@ -45,15 +54,19 @@ function Login(props) {
         <View style={styles.box}>
           <View style={styles.viewInput}>
             <Image source={loginIcon} style={styles.loginIcon} />
+            <Text>{error}</Text>
             <TextInput
               placeholder="Email"
               style={styles.input}
               placeholderTextColor="#000"
+              onChangeText={(value) => setEmail(value)}
             />
             <TextInput
               placeholder="Senha"
               style={styles.input}
               placeholderTextColor="#000"
+              secureTextEntry
+              onChangeText={(value) => setSenha(value)}
             />
             <View style={styles.viewCheckbox}>
               <Switch
@@ -81,7 +94,7 @@ function Login(props) {
 
         <RectButton
           style={styles.logarButton}
-          onPress={() => handleNavigationToConfiguracoes()}
+          onPress={() => handleSignInPress()}// dentro de uma arrow function ele não irá executar direto.
         >
           <Text>Logar</Text>
         </RectButton>

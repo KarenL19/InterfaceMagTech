@@ -17,15 +17,7 @@ export default StyleSheet.create({
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
     height: 62,
-    
-  },
 
-  imageFlor: {
-    height: 80,
-    width: 80,
-    position: 'relative',
-    top: '43%',
-    left: '37%',
   },
 
   imagemPerfilIcone: {
@@ -78,11 +70,12 @@ export default StyleSheet.create({
     marginBottom: 7,
     marginLeft: 2,
   },
+
   footerComIcones: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: -25,
-    marginLeft: 15
+    marginLeft: 15,
   },
 
 });

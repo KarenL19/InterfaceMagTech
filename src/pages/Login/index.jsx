@@ -9,8 +9,8 @@ import logo from '../../assets/images/logo2.png';
 import loginIcon from '../../assets/icons/loginIcon.png';
 
 import styles from './styles';
-import Header from '../../components/HeaderSemIcone';
-import Footer from '../../components/FooterSemIcone';
+import Header from '../../components/HeaderWithoutIcons';
+import Footer from '../../components/FooterWithoutIcons';
 
 export default class Login extends Component {
   state = {
@@ -20,6 +20,11 @@ export default class Login extends Component {
   handleNavigationToCadastro() {
     const { navigation } = this.props;
     navigation.navigate('Cadastro');
+  }
+
+  handleNavigationToConfiguracoes() {
+    const { navigation } = this.props;
+    navigation.navigate('Configuracoes');
   }
 
   toggleSwitch = value => {
@@ -67,7 +72,10 @@ export default class Login extends Component {
               </View>
           </View>
 
-          <RectButton style={styles.logarButton}>
+          <RectButton 
+            style={styles.logarButton}
+            onPress={() => this.handleNavigationToConfiguracoes()}
+          >
             <Text>Logar</Text>
           </RectButton>
           <TouchableOpacity onPress={() => this.handleNavigationToCadastro()}>

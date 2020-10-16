@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import {
+  View, TouchableOpacity, Text, StyleSheet,
+} from 'react-native';
 import React from 'react';
 // Import src components
 import Routes from './src/routes';

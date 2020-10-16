@@ -7,8 +7,8 @@ import logo from '../../assets/images/logo2.png';
 import clipboardIcon from '../../assets/icons/clipboard.png';
 
 import styles from './styles';
-import Header from '../../components/HeaderSemIcone';
-import Footer from '../../components/FooterSemIcone';
+import Header from '../../components/HeaderWithoutIcons';
+import Footer from '../../components/FooterWithoutIcons';
 
 export default class Cadastro extends Component {
   state = {
@@ -18,6 +18,11 @@ export default class Cadastro extends Component {
   handleNavigationToLogin() {
     const { navigation } = this.props;
     navigation.navigate('Login');
+  }
+
+  handleNavigationToConfiguracoes() {
+    const { navigation } = this.props;
+    navigation.navigate('Configuracoes');
   }
 
   toggleSwitch = value => {
@@ -35,11 +40,6 @@ export default class Cadastro extends Component {
               <Image
                 source={clipboardIcon}
                 style={styles.loginIcon}
-              />
-              <TextInput
-                placeholder="Nome"
-                style={styles.input}
-                placeholderTextColor="#000"
               />
               <TextInput
                 placeholder="Email"
@@ -78,7 +78,10 @@ export default class Cadastro extends Component {
             </View>
           </View>
 
-          <RectButton style={styles.cadastrarButton}>
+          <RectButton 
+            style={styles.cadastrarButton}
+            onPress={() => this.handleNavigationToConfiguracoes()}
+          >
             <Text>Cadastrar</Text>
           </RectButton>
           <TouchableOpacity onPress={() => this.handleNavigationToLogin()}>

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   box: {
-    height: 350,
+    height: 330,
     backgroundColor: '#fff',
     width: 325,
     marginTop: 20,

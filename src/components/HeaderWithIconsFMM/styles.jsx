@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    
+
   headerFooter: {
     backgroundColor: '#34CBC5',
     flexDirection: 'row',
-    flex: 1,
+    flex: 1.2,
   },
 
   imagemPerfilIcone: {
@@ -20,7 +20,7 @@ export default StyleSheet.create({
   },
   tituloMensagensHeader: {
     fontSize: 20,
-    marginLeft: 35,
+    marginLeft: 45,
     paddingTop: 45,
     color: '#000000',
     marginRight: 30,
@@ -49,8 +49,7 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginRight: 20,
     marginTop: 40,
-    
+
   },
 
-   
 });

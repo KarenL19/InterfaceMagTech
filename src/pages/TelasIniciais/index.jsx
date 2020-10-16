@@ -6,8 +6,8 @@ import { RectButton } from 'react-native-gesture-handler';
 import { Feather as Icon } from '@expo/vector-icons';
 
 // Import header and footer
-import Header from '../../components/HeaderSemIcone';
-import Footer from '../../components/FooterSemIcone';
+import Header from '../../components/HeaderWithoutIcons';
+import Footer from '../../components/FooterWithoutIcons';
 
 // Import images and icons
 import logo from '../../assets/images/logo.png';
@@ -21,13 +21,12 @@ import imageAmbulancia from '../../assets/images/ambulancia.png';
 import imageCelular from '../../assets/images/celular.png';
 
 // Import assets
-import EstilizacaoPadrao from '../../assets/styles/global';
 import styles from './styles';
 
 export default class TelasIniciais extends Component {
   handleNavigationToLogin() {
     const { navigation } = this.props;
-    navigation.navigate('Login');
+    navigation.navigate('Cadastro');
   }
 
   render() {
@@ -60,9 +59,7 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageLogo} source={logo} />
             <Text style={styles.thirdTitle}>Sobre Doação de Órgãos</Text>
             <Text style={styles.thirdText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
-              Donec vulputate lacinia mauris, quis rutrum risus sagittis eget.
+            Um único doador que teve morte encefálica pode ajudar até dez pessoas que estão na fila de espera do transplante. É possível doar órgãos (coração, fígado, rins, pâncreas, pulmões e pele) e tecidos (ossos, córneas e medula óssea).
             </Text>
 
             <Image style={styles.thirdImage} source={imageCoracaoMao} />
@@ -70,12 +67,11 @@ export default class TelasIniciais extends Component {
 
           <View style={styles.forthView}>
             <Image style={styles.imageLogo} source={logo} />
-            <Text style={styles.forthViewTitle}>Alguns dados</Text>
+            <Text style={styles.forthViewTitle}>Dados sobre:</Text>
             <Image style={styles.imageFlor} source={imageFlor} />
             <Image style={styles.imageBarras} source={imageGrafico} />
             <Text style={styles.forthViewText}>
-              Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.
+            De acordo com o Ministério da Saúde, o Brasil é referência mundial na área de transplantes e possui o maior sistema público de transplantes do mundo. Atualmente, cerca de 96% dos procedimentos de todo o País são financiados pelo Sistema Único de Saúde (SUS). Em números absolutos, o Brasil é o 2º maior transplantador do mundo, atrás apenas dos EUA. 
             </Text>
           </View>
 
@@ -83,9 +79,8 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageLogo} source={logo} />
             <Text style={styles.fifthViewTitle}>Como Funciona</Text>
             <Text style={styles.fifthText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Mauris in consectetur ipsum. Vivamus ligula odio, egestas vitae hendrerit et, placerat in leo.
-              Donec vulputate lacinia mauris, quis rutrum risus sagittis eget.
+            É considerado como potencial doador, pacientes em morte cerebral ou encefálica. Em geral, as principais causas desse tipo de morte são: Traumatismo Crânio Encefálico; Acidente Vascular Encefálico (hemorrágico ou isquêmico); Encefalopatia Anóxica e Tumor Cerebral Primário.
+            No Brasil, este diagnóstico é definido por meio da Resolução CFM nº 1480/97, devendo ser registrado no prontuário do paciente um Termo de Declaração de Morte Encefálica, descrevendo todos os elementos do exame neurológico.
             </Text>
 
             <View style={styles.fifthViewImages}>
@@ -99,8 +94,10 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageLogo} source={logo} />
             <Text style={styles.sixthViewTitle}>Nossa Rede Social</Text>
             <Text style={styles.sixthViewText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis augue risus.
-              Morbi non aliquet turpis. Nullam quis condimentum massa, quis finibus sem.
+              Temos como objetivo facilitar o processo de doação de
+              orgãos por meio de interações reais de perfis médicos com 
+              perfis de pessoas comuns. As pessoas poderão adicionar informações 
+              médicas onde somente perfis médicos vão poder acessar. 
             </Text>
             <View style={styles.nextPageView}>
               <Image source={imageCelular} style={styles.imageCelular} />

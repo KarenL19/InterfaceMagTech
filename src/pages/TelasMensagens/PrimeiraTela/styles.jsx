@@ -1,10 +1,8 @@
 import { StyleSheet } from 'react-native';
-import { TextInput } from 'react-native-gesture-handler';
 
 export default StyleSheet.create({
   container: {
     height: '100%',
-    
   },
 
   body: {
@@ -14,30 +12,26 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
-  
-  campoDePesquisa:{
+
+  campoDePesquisa: {
     height: '100%',
     width: '100%',
     marginTop: 126,
-    //borderColor: 'black',
+    // borderColor: 'black',
     // borderWidth: 2,
     // backgroundColor: '#dcdcdc',
     marginBottom: 126,
-   
-    
-    
   },
 
-  viewGeralContatos:{
+  viewGeralContatos: {
     height: '100%',
     width: '100%',
-   //borderColor: 'black',
-   //borderWidth: 2,
+    // borderColor: 'black',
+    // borderWidth: 2,
     backgroundColor: 'white',
     marginTop: 100,
-
   },
-  
+
   backgroundHeaderIcone: {
     height: 40,
     width: 40,
@@ -65,7 +59,7 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginBottom: -80,
     marginTop: 35,
-    marginLeft: 300,
+    marginLeft: 320,
   },
 
   imagemFiltroIcone: {
@@ -73,17 +67,16 @@ export default StyleSheet.create({
     width: 25,
     margin: 3,
     marginTop: 5,
-    marginLeft: 4
+    marginLeft: 4,
   },
 
-  viewContatoUnitario:{
+  viewContatoUnitario: {
     height: 130,
     width: '100%',
     marginTop: 10,
     borderColor: '#dcdcdc',
     borderWidth: 2,
     backgroundColor: '#ffffff',
-   
   },
 
   imagemPerfilIcone: {
@@ -95,12 +88,11 @@ export default StyleSheet.create({
     margin: 40,
     backgroundColor: 'white',
     marginLeft: 15,
-
   },
 
   nomeUsuario: {
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginLeft: 116,
     color: '#000000',
     marginTop: -100,
@@ -108,20 +100,26 @@ export default StyleSheet.create({
 
   mensagemUsuario: {
     fontSize: 13,
-    fontWeight: "bold",
-    textAlign: "center",
+    fontWeight: 'bold',
+    textAlign: 'center',
     marginLeft: 5,
     color: 'grey',
     marginTop: 10,
   },
 
-  campoDeBusca:{ 
-   flex: 1,
-   alignItems: 'flex-start',
-   justifyContent: 'flex-start',
-   
-   
-    
+  viewCampoDeBusca: {
+    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   },
 
+  campoDeBusca: {
+    height: 30,
+    width: 250,
+    borderColor: 'grey',
+    borderWidth: 1,
+    borderRadius: 30,
+    marginTop: 97,
+    marginLeft: 30,
+  },
 });

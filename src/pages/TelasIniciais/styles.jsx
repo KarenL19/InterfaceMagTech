@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
   thirdImage: {
     height: 200,
     width: 300,
+    marginTop: 35
   },
   forthView: {
     width: deviceWidth,
@@ -97,11 +98,13 @@ const styles = StyleSheet.create({
     maxWidth: 300,
     bottom: '15%',
     lineHeight: 24,
+    marginTop: 30
   },
   imageBarras: {
     height: 200,
     width: 300,
     bottom: '12%',
+    marginTop: 20
   },
   fifthView: {
     width: deviceWidth,
@@ -122,6 +125,7 @@ const styles = StyleSheet.create({
   fifthViewImages: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: -50
   },
   imageHeart: {
     height: 130,

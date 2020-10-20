@@ -54,6 +54,7 @@ export default class App extends Component {
           }}
         >
           <Text style={styles.textStyle}>Exame        </Text>
+
         </TouchableHighlight>
         </View>
         </View>

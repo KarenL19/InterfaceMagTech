@@ -5,8 +5,17 @@ import {
   StyleSheet,
   Text,
   TouchableHighlight,
-  View
+  View,
+  Image,
+  TextInput,
 } from "react-native";
+
+import fechar from "../../assets/icons/exit.png"
+import styles from "./styles"
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import {ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import RNPickerSelect from 'react-native-picker-select';
+
 
 export default class App extends Component {
   state = {
@@ -32,15 +41,86 @@ export default class App extends Component {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={styles.modalText}>Hello World!</Text>
-
-                <TouchableHighlight
-                  style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              <TouchableHighlight
+                  style={styles.exitButton}
                   onPress={() => {
                     this.setModalVisible(!modalVisible);
                   }}
                 >
-                  <Text style={styles.textStyle}>Fechar Modal</Text>
+                <Image style={styles.imageExitIcon}
+                source={fechar}
+                />
+                </TouchableHighlight>
+                <View style={styles.titleModal}>
+                <Text style={styles.textStyle}>Privacidade         </Text>                
+                </View>
+              
+          
+            <View style={styles.viewInput}>
+            <Text style={styles.titleInput}>Quem pode ver meu perfil?</Text>
+            <View styles={styles.viewSelect}>
+            <RNPickerSelect
+            style={styles.viewSelect}
+            onValueChange={(value) => console.log(value)}
+            styles={styles.viewSelect}
+            items={[
+                { label: 'Público', value: 'Público' },
+                { label: 'Privado', value: 'Privado' },
+                { label: 'Apenas meus Contatos', value: 'Apenas meus contatos' },
+            ]}
+        />
+        </View>
+              <Text style={styles.titleInput}>Status:</Text>
+              <View>
+              <RNPickerSelect
+            style={styles.viewSelect}
+            onValueChange={(value) => console.log(value)}
+            styles={styles.viewSelect}
+            items={[
+                { label: 'On-line', value: 'On-line' },
+                { label: 'Off-line', value: 'Privado' },
+                { label: 'Ocupado', value: 'Apenas meus contatos' },
+                { label: 'Ausente', value: 'Apenas meus contatos' },
+                { label: 'Volto logo', value: 'Apenas meus contatos' },
+            ]}
+        />
+                </View>
+                <Text style={styles.titleInput}>Pessoas bloqueadas:</Text>
+                <View style={styles.viewGeralBlock}>
+                <ScrollView>
+                <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View>
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View> 
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View> 
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.viewBlock}>
+        <Text style={styles.textBlock}>Usuário bloqueado</Text>
+        </TouchableOpacity>
+        </View> 
+        </ScrollView>          
+        </View>
+        
+              </View>          
+        
+
+                <TouchableHighlight
+                  style={styles.saveButton}
+                  onPress={() => {
+                    this.setModalVisible(!modalVisible);
+                  }}
+                >
+                  <Text style={styles.textStyle}>Salvar Alterações</Text>
                 </TouchableHighlight>
               </View>
             </View>
@@ -61,44 +141,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 22
-  },
-  
-  modalView: {
-    margin: 20,
-    backgroundColor: "white",
-    borderRadius: 20,
-    padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5
-  },
-  openButton: {
-    backgroundColor: "#FFE6E6",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2,
-    borderWidth: 1
-  },
-  textStyle: {
-    color: "black",
-    fontWeight: "bold",
-    textAlign: "center"
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: "center"
-  }
-});

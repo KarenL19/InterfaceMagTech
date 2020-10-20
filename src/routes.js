@@ -27,6 +27,11 @@ export default class Routes extends Component {
           <AppStack.Screen name="Configuracoes" component={Configuracoes} />
           <AppStack.Screen name="Cadastro" component={Cadastro} />
           <AppStack.Screen name="Login" component={Login} />
+<<<<<<< HEAD
+=======
+          <AppStack.Screen name="Feed" component={Feed} />
+          <AppStack.Screen name="Configuracoes" component={Configuracoes} />
+>>>>>>> tarefasCarol
           <AppStack.Screen name="TelasMensagens" component={TelasMensagens} />
         </AppStack.Navigator>
       </NavigationContainer>

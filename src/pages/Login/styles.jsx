@@ -35,6 +35,16 @@ const styles = StyleSheet.create({
   viewInput: {
     alignItems: 'center',
   },
+  flowerBackgound: {
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    height: 543,
+    width: 390,
+    padding: 10,
+    marginTop: 0,
+  },
   logarButton: {
     borderWidth: 1,
     borderRadius: 25,

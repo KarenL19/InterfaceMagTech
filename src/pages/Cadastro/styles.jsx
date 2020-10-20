@@ -32,6 +32,16 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#E6A9A9',
   },
+  flowerBackgound: {
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    height: 543,
+    width: 390,
+    padding: 10,
+    marginTop: 0,
+  },
   viewInput: {
     alignItems: 'center',
   },

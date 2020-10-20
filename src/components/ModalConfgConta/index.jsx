@@ -5,8 +5,15 @@ import {
   StyleSheet,
   Text,
   TouchableHighlight,
-  View
+  View,
+  Image,
+  TextInput,
+  Keyboard,
 } from "react-native";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import styles from "./styles"
+import { TouchableOpacity } from "react-native-gesture-handler";
+import fechar from "../../assets/icons/exit.png"
 
 export default class App extends Component {
   state = {
@@ -32,15 +39,52 @@ export default class App extends Component {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={styles.modalText}>Hello World!</Text>
-
-                <TouchableHighlight
-                  style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              <TouchableHighlight
+                  style={styles.exitButton}
                   onPress={() => {
                     this.setModalVisible(!modalVisible);
                   }}
                 >
-                  <Text style={styles.textStyle}>Fechar Modal</Text>
+                <Image style={styles.imageExitIcon}
+                source={fechar}
+                />
+                </TouchableHighlight>
+                <View style={styles.titleModal}>
+                <Text style={styles.textStyle}>Conta         </Text>                
+                </View>
+              <KeyboardAwareScrollView>
+          
+            <View style={styles.viewInput}>
+            <Text style={styles.titleInput}>E-mail:</Text>
+              <TextInput
+                placeholder="example@example.com"
+                style={styles.input}
+                placeholderTextColor="#000"
+              />
+              <Text style={styles.titleInput}>Número de telefone:</Text>
+              <TextInput
+                placeholder="(xx) xxxxx-xxxx"
+                style={styles.input}
+                placeholderTextColor="#000"
+              />             
+              </View>          
+        </KeyboardAwareScrollView>
+        <View style={styles.viewTouch}>
+        <TouchableOpacity style={styles.touch}>
+        <Text>Gerenciar conta</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.touch}>
+        <Text>Apagar conta</Text>
+        </TouchableOpacity>
+        </View>
+
+                <TouchableHighlight
+                  style={styles.saveButton}
+                  onPress={() => {
+                    this.setModalVisible(!modalVisible);
+                  }}
+                >
+                  <Text style={styles.textStyle}>Salvar Alterações</Text>
                 </TouchableHighlight>
               </View>
             </View>
@@ -61,44 +105,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 22
-  },
-  
-  modalView: {
-    margin: 20,
-    backgroundColor: "white",
-    borderRadius: 20,
-    padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5
-  },
-  openButton: {
-    backgroundColor: "#FFE6E6",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2,
-    borderWidth: 1
-  },
-  textStyle: {
-    color: "black",
-    fontWeight: "bold",
-    textAlign: "center"
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: "center"
-  }
-});

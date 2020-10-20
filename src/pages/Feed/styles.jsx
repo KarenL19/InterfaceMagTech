@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
-  backgroundIcones: {
+  backgroundHeaderIcones: {
     height: 40,
     width: 40,
     backgroundColor: 'white',
@@ -26,22 +26,47 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     borderRadius: 50,
-    marginTop: 15,
+    marginTop: 25,
     backgroundColor: 'white',
   },
   postContainer: {
     height: 485,
     width: deviceWidth,
-    borderWidth: 1,
     backgroundColor: '#fff',
+    marginTop: 10,
   },
   postHeader: {
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
   usernameText: {
-    marginTop: 15,
+    marginTop: 25,
     marginRight: 100,
+  },
+  corpoPost: {
+    resizeMode: 'contain',
+    height: 300,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  viewCorpoPost: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 0.5,
+    marginTop: 20,
+  },
+  postFooter: {
+    flexDirection: 'row',
+  },
+  backgroundFooterIcones: {
+    height: 50,
+    width: 50,
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginTop: 15,
+    marginLeft: 15,
   },
 });
 

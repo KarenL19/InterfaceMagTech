@@ -1,6 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import {
-  View, Text, StyleSheet, Image, TextInput, ImageBackground,
+  View, Text, Image, TextInput, ImageBackground,
 } from 'react-native';
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';

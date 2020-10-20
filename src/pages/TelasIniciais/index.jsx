@@ -59,7 +59,7 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageLogo} source={logo} />
             <Text style={styles.thirdTitle}>Sobre Doação de Órgãos</Text>
             <Text style={styles.thirdText}>
-            Um único doador que teve morte encefálica pode ajudar até dez pessoas que estão na fila de espera do transplante. É possível doar órgãos (coração, fígado, rins, pâncreas, pulmões e pele) e tecidos (ossos, córneas e medula óssea).
+              Um único doador que teve morte encefálica pode ajudar até dez pessoas que estão na fila de espera do transplante. É possível doar órgãos (coração, fígado, rins, pâncreas, pulmões e pele) e tecidos (ossos, córneas e medula óssea).
             </Text>
 
             <Image style={styles.thirdImage} source={imageCoracaoMao} />
@@ -71,7 +71,7 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageFlor} source={imageFlor} />
             <Image style={styles.imageBarras} source={imageGrafico} />
             <Text style={styles.forthViewText}>
-            De acordo com o Ministério da Saúde, o Brasil é referência mundial na área de transplantes e possui o maior sistema público de transplantes do mundo. Atualmente, cerca de 96% dos procedimentos de todo o País são financiados pelo Sistema Único de Saúde (SUS). Em números absolutos, o Brasil é o 2º maior transplantador do mundo, atrás apenas dos EUA. 
+              O Brasil é referência mundial na área de transplantes e possui o maior sistema público de transplantes do mundo. Em números absolutos, o Brasil é o 2º maior transplantador do mundo.
             </Text>
           </View>
 
@@ -79,8 +79,8 @@ export default class TelasIniciais extends Component {
             <Image style={styles.imageLogo} source={logo} />
             <Text style={styles.fifthViewTitle}>Como Funciona</Text>
             <Text style={styles.fifthText}>
-            É considerado como potencial doador, pacientes em morte cerebral ou encefálica. Em geral, as principais causas desse tipo de morte são: Traumatismo Crânio Encefálico; Acidente Vascular Encefálico (hemorrágico ou isquêmico); Encefalopatia Anóxica e Tumor Cerebral Primário.
-            No Brasil, este diagnóstico é definido por meio da Resolução CFM nº 1480/97, devendo ser registrado no prontuário do paciente um Termo de Declaração de Morte Encefálica, descrevendo todos os elementos do exame neurológico.
+              É considerado como potencial doador, pacientes em morte cerebral.
+              No Brasil, este diagnóstico é definido por meio da Resolução CFM nº 1480/97, devendo ser registrado no prontuário do paciente um Termo de Declaração de Morte Encefálica, descrevendo todos os elementos do exame neurológico.
             </Text>
 
             <View style={styles.fifthViewImages}>
@@ -95,9 +95,9 @@ export default class TelasIniciais extends Component {
             <Text style={styles.sixthViewTitle}>Nossa Rede Social</Text>
             <Text style={styles.sixthViewText}>
               Temos como objetivo facilitar o processo de doação de
-              orgãos por meio de interações reais de perfis médicos com 
-              perfis de pessoas comuns. As pessoas poderão adicionar informações 
-              médicas onde somente perfis médicos vão poder acessar. 
+              orgãos por meio de interações reais de perfis médicos com
+              perfis de pessoas comuns. As pessoas poderão adicionar informações
+              médicas onde somente perfis médicos vão poder acessar.
             </Text>
             <View style={styles.nextPageView}>
               <Image source={imageCelular} style={styles.imageCelular} />

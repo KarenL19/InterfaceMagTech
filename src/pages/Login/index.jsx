@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import {
-  Text, View, Image, TextInput,
+  Text, View, Image, TextInput, ImageBackground,
 } from 'react-native';
 import { RectButton, TouchableOpacity, Switch } from 'react-native-gesture-handler';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -9,6 +9,7 @@ import api from '../../services/api';
 
 import logo from '../../assets/images/logo2.png';
 import loginIcon from '../../assets/icons/loginIcon.png';
+import flowerBackground from '../../assets/images/fundoFlor.png';
 
 import styles from './styles';
 import Header from '../../components/HeaderWithoutIcons';
@@ -50,33 +51,37 @@ function Login(props) {
     <>
       <Header />
       <KeyboardAwareScrollView contentContainerStyle={styles.body}>
-        <Image source={logo} style={styles.imageLogo} />
-        <View style={styles.box}>
-          <View style={styles.viewInput}>
-            <Image source={loginIcon} style={styles.loginIcon} />
-            <Text>{error}</Text>
-            <TextInput
-              placeholder="Email"
-              style={styles.input}
-              placeholderTextColor="#000"
-              onChangeText={(value) => setEmail(value)}
-            />
-            <TextInput
-              placeholder="Senha"
-              style={styles.input}
-              placeholderTextColor="#000"
-              secureTextEntry
-              onChangeText={(value) => setSenha(value)}
-            />
-            <View style={styles.viewCheckbox}>
-              <Switch
-                style={{ margin: 10 }}
-                onValueChange={toggleSwitch}
-                value={switchValue}
+        <ImageBackground
+          style={styles.flowerBackgound}
+          source={flowerBackground}
+        >
+          <Image source={logo} style={styles.imageLogo} />
+          <View style={styles.box}>
+            <View style={styles.viewInput}>
+              <Image source={loginIcon} style={styles.loginIcon} />
+              <Text>{error}</Text>
+              <TextInput
+                placeholder="Email"
+                style={styles.input}
+                placeholderTextColor="#000"
+                onChangeText={(value) => setEmail(value)}
               />
-              <Text style={{ marginTop: 18 }}>Sou um(a) profissional da saúde</Text>
-            </View>
-            {
+              <TextInput
+                placeholder="Senha"
+                style={styles.input}
+                placeholderTextColor="#000"
+                secureTextEntry
+                onChangeText={(value) => setSenha(value)}
+              />
+              <View style={styles.viewCheckbox}>
+                <Switch
+                  style={{ margin: 10 }}
+                  onValueChange={toggleSwitch}
+                  value={switchValue}
+                />
+                <Text style={{ marginTop: 18 }}>Sou um(a) profissional da saúde</Text>
+              </View>
+              {
               switchValue
                 ? (
                   <View style={styles.viewInput}>
@@ -89,18 +94,19 @@ function Login(props) {
                 )
                 : <></>
               }
+            </View>
           </View>
-        </View>
 
-        <RectButton
-          style={styles.logarButton}
-          onPress={() => handleSignInPress()}// dentro de uma arrow function ele não irá executar direto.
-        >
-          <Text>Logar</Text>
-        </RectButton>
-        <TouchableOpacity onPress={() => handleNavigationToCadastro()}>
-          <Text>Ainda não possui cadastro?</Text>
-        </TouchableOpacity>
+          <RectButton
+            style={styles.logarButton}
+            onPress={() => handleSignInPress()}
+          >
+            <Text>Logar</Text>
+          </RectButton>
+          <TouchableOpacity onPress={() => handleNavigationToCadastro()}>
+            <Text>Ainda não possui cadastro?</Text>
+          </TouchableOpacity>
+        </ImageBackground>
       </KeyboardAwareScrollView>
       <Footer />
     </>

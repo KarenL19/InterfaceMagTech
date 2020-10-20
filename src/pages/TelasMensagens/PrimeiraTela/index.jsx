@@ -72,8 +72,8 @@ export default class PrimeiraTelaMensagem extends Component {
                     source={fotoPerfil}
                   />
                   <Text style={EstilizacaoMensagem.nomeUsuario}>
-                    Nome do usuário
-                  </Text>
+                    Nome do usuário 
+                  </Text> 
                   <Text style={EstilizacaoMensagem.mensagemUsuario}>
                     Olá, tudo bem?
                     {' '}

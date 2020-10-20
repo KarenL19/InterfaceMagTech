@@ -16,6 +16,11 @@ import iconCerebro from '../../assets/icons/cerebroPost.png';
 import iconCompartilhar from '../../assets/icons/compartilharPost.png';
 import imagemPost from '../../assets/images/imagemPost.png';
 
+//Import components
+import ModalOpcoes from '../../components/ModalFeedOpcoes';
+
+
+//Import styles
 import styles from './styles';
 
 const DATA = [
@@ -179,9 +184,10 @@ function TelaFeed(props) {
           )}
         />
       </View>
-      <Footer />
     </View>
-  );
+    <Footer />
+  </View>
+);
 }
 
 export default TelaFeed;

@@ -19,11 +19,11 @@ function Routes() {
       <AppStack.Navigator
         headerMode="none"
       >
-        <AppStack.Screen name="Perfil" component={Perfil} />
         <AppStack.Screen name="TelasIniciais" component={TelasIniciais} />
         <AppStack.Screen name="Cadastro" component={Cadastro} />
         <AppStack.Screen name="Login" component={Login} />
         <AppStack.Screen name="Feed" component={Feed} />
+        <AppStack.Screen name="Perfil" component={Perfil} />
         <AppStack.Screen name="Configuracoes" component={Configuracoes} />
         <AppStack.Screen name="TelasMensagens" component={TelasMensagens} />
       </AppStack.Navigator>

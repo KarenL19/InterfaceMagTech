@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     marginTop: 15,
-    marginLeft: 20
+    marginLeft: 20,
   },
   fotoPerfil: {
     height: 160,
@@ -30,41 +30,40 @@ const styles = StyleSheet.create({
     marginTop: 25,
     marginLeft: 20,
     backgroundColor: 'white',
-    //resizeMode: "stretch"
+    // resizeMode: "stretch"
   },
-  
+
   postContainer: {
-    flex: 4, 
+    flex: 4,
     height: 160,
     width: deviceWidth,
     borderWidth: 1,
-    backgroundColor:  '#fff',
-    //justifyContent: "space-between",
-    marginTop: -80 
+    backgroundColor: '#fff',
+    // justifyContent: "space-between",
+    marginTop: -80,
   },
 
   postContainer2: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
     marginTop: 48,
     backgroundColor: '#fff',
-    justifyContent: "center",
-    
+    justifyContent: 'center',
+
   },
 
   postContainer3: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
     height: 120,
     width: deviceWidth,
     borderWidth: 1,
     marginTop: 20,
     backgroundColor: '#fff',
     marginBottom: 60,
-    //flexDirection: "column"
+    // flexDirection: "column"
   },
-
 
   fotoContainer: {
     flex: 2,
@@ -74,53 +73,53 @@ const styles = StyleSheet.create({
     marginTop: 100,
     backgroundColor: '#fff',
     marginLeft: 85,
-    borderRadius:100,
-    justifyContent: "flex-start",
-    zIndex: 999
+    borderRadius: 100,
+    justifyContent: 'flex-start',
+    zIndex: 999,
   },
 
   postHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
- 
+
   usernameText: {
     marginTop: 60,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: 15,
-    marginLeft: 120 
-    
+    marginLeft: 120,
+
   },
-  sobreMimText:{
-    fontWeight: "bold",
+  sobreMimText: {
+    fontWeight: 'bold',
     fontSize: 16,
-    marginLeft: 28, 
-    
+    marginLeft: 28,
+
   },
 
-  barraSaudeText:{
-    fontWeight: "bold",
+  barraSaudeText: {
+    fontWeight: 'bold',
     fontSize: 15,
-    marginLeft: 28, 
-    marginTop: 15
+    marginLeft: 28,
+    marginTop: 15,
   },
 
-  barraSaude:{
-    resizeMode: "contain",
-    //paddingRight: 100 
+  barraSaude: {
+    resizeMode: 'contain',
+    // paddingRight: 100
     marginLeft: -255,
-    marginTop: 30
-  
+    marginTop: 30,
+
   },
 
-  viewBarraSaude:{
+  viewBarraSaude: {
     marginTop: 30,
-    marginRight: 60
+    marginRight: 60,
   },
-   
-  viewUsernameText:{
-    //marginRight: -50
-  }
+
+  viewUsernameText: {
+    // marginRight: -50
+  },
 
 });
 

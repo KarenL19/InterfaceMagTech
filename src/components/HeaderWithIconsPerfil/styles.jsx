@@ -12,15 +12,15 @@ export default StyleSheet.create({
     height: 35,
     width: 35,
     marginLeft: 3,
-    marginTop:2
-  
+    marginTop: 2,
+
   },
 
   tituloMensagensHeader: {
     fontSize: 20,
     marginLeft: 45,
     paddingTop: 60,
-    paddingLeft: 50  , 
+    paddingLeft: 50,
     color: '#000000',
     marginRight: 60,
   },
@@ -31,7 +31,7 @@ export default StyleSheet.create({
     height: 35,
     width: 35,
     margin: 2,
-   
+
   },
   imagemAviaoIcone: {
     height: 30,
@@ -52,7 +52,7 @@ export default StyleSheet.create({
 
   },
 
-  backgroundHeaderIconePrancheta:{
+  backgroundHeaderIconePrancheta: {
     height: 40,
     width: 40,
     backgroundColor: 'white',
@@ -61,6 +61,6 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginLeft: 20,
     marginTop: 55,
-  }
+  },
 
 });

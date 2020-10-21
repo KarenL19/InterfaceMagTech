@@ -3,31 +3,31 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     height: '100%',
-   
-},
+
+  },
 
   centeredView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 22,
-    
+
   },
-  
+
   modalView: {
     margin: 20,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderRadius: 20,
     padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
+    alignItems: 'center',
+    shadowColor: '#000',
     shadowOffset: {
-    width:0,
-    height: 2
+      width: 0,
+      height: 2,
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    elevation: 5
+    elevation: 5,
   },
   openButton: {
     height: 40,
@@ -37,26 +37,24 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     marginRight: 10,
-    marginTop: 25,
-   
   },
   textStyle: {
-    color: "black",
-    fontWeight: "bold",
-    textAlign: "center",
+    color: 'black',
+    fontWeight: 'bold',
+    textAlign: 'center',
 
   },
   modalText: {
     marginBottom: 100,
-    textAlign: "center"
-    
+    textAlign: 'center',
+
   },
   imagemMenu: {
-    height: 38,
-    width: 38,
-   
+    height: 35,
+    width: 35,
+    left: 1.7,
   },
-  
+
   openButtonModal: {
     height: 40,
     width: 40,
@@ -74,27 +72,36 @@ export default StyleSheet.create({
     width: 60,
     marginRight: 220,
     marginTop: 50,
-   // borderBottomWidth: 1.5,
-  //  borderBottomColor: "#dcdcdc",
-       
-    
-    }, 
 
-  barraCinza:{ 
+  },
+
+  barraCinza: {
     height: 100,
     width: 200,
     marginHorizontal: 45,
-    textAlign: "center"
-    
+    textAlign: 'center',
+
   },
 
-  barraCinzaMesmo:{
+  barraCinzaMesmo: {
     height: 40,
     width: 70,
     marginRight: 220,
     marginTop: 50,
     borderBottomWidth: 1.5,
-    borderBottomColor: "#dcdcdc",
-  }
- 
+    borderBottomColor: '#dcdcdc',
+  },
+
+  imageExitIcon: {
+    height: 30,
+    width: 30,
+  },
+  exitButton: {
+    borderRadius: 10,
+    elevation: 2,
+    borderWidth: 1,
+    marginLeft: 250,
+    borderColor: '#fff',
+  },
+
 });

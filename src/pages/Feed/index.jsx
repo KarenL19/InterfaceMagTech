@@ -16,11 +16,10 @@ import iconCerebro from '../../assets/icons/cerebroPost.png';
 import iconCompartilhar from '../../assets/icons/compartilharPost.png';
 import imagemPost from '../../assets/images/imagemPost.png';
 
-//Import components
+// Import components
 import ModalOpcoes from '../../components/ModalFeedOpcoes';
 
-
-//Import styles
+// Import styles
 import styles from './styles';
 
 const DATA = [
@@ -136,10 +135,10 @@ const DATA = [
   },
 ];
 
-function TelaFeed(props) {
+function TelaFeed({ navigation }) {
   return (
     <View style={styles.container}>
-      <Header navigation={props.navigation} />
+      <Header navigation={navigation} />
       <View style={styles.body}>
         <FlatList
           data={DATA}
@@ -155,10 +154,7 @@ function TelaFeed(props) {
                   source={item.alerta}
                   style={styles.backgroundHeaderIcones}
                 />
-                <Image
-                  source={item.opcoes}
-                  style={styles.backgroundHeaderIcones}
-                />
+                <ModalOpcoes />
               </View>
               <View style={styles.viewCorpoPost}>
                 <Image
@@ -184,10 +180,9 @@ function TelaFeed(props) {
           )}
         />
       </View>
+      <Footer />
     </View>
-    <Footer />
-  </View>
-);
+  );
 }
 
 export default TelaFeed;

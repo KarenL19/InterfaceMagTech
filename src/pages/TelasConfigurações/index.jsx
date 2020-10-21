@@ -2,7 +2,7 @@ import { View, ImageBackground } from 'react-native';
 import React from 'react';
 import CabecalhoConfig from '../../components/HeaderWithIconsCG';
 import Rodape from '../../components/FooterWithIcons/index';
-import prancheta from '../../../assets/images/prancheta.png';
+import prancheta from '../../assets/images/prancheta.png';
 import ModalPrivacidade from '../../components/ModalConfgPrivacidade';
 import ModalExame from '../../components/ModalConfgExames';
 import ModalConta from '../../components/ModalConfgConta';

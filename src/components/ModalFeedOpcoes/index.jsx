@@ -8,8 +8,10 @@ import {
   Image
 } from "react-native";
 
-import styles from "./styles";
 import Opcoes from "../../assets/icons/botaoOpcoes.png"
+import fechar from "../../assets/icons/exit.png"
+
+import styles from "./styles";
 
 
 export default class App extends Component {
@@ -26,9 +28,6 @@ export default class App extends Component {
     return (
       <View>
         <View style={styles.centeredView}>
-	        <TouchableHighlight style={styles.openButton} onPress={() => {
-            this.setModalVisible(true);
-           }}>
             
           <Modal
             animationType="slide"
@@ -40,6 +39,16 @@ export default class App extends Component {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
+              <TouchableHighlight
+                  style={styles.exitButton}
+                  onPress={() => {
+                    this.setModalVisible(!modalVisible);
+                  }}
+                >
+                <Image style={styles.imageExitIcon}
+                source={fechar}
+                />
+                </TouchableHighlight>
                 
                 <Image 
                 style={styles.openButtonModal}
@@ -66,9 +75,11 @@ export default class App extends Component {
               </View>
             </View>
           </Modal>
-          </TouchableHighlight>
           </View>
         <View>
+          <TouchableHighlight style={styles.openButton} onPress={() => {
+            this.setModalVisible(true);
+           }}>
       
             <Image
             style={styles.imagemMenu}
@@ -76,6 +87,7 @@ export default class App extends Component {
             />
             
             
+            </TouchableHighlight>
         </View>
         </View>
 

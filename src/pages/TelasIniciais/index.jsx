@@ -54,33 +54,33 @@ function TelasIniciais(props) {
           <Image style={styles.imagePontosInterrog} source={imagePontosInterrog} />
         </View>
 
-          <View style={styles.thirdView}>
-            <Image style={styles.imageLogo} source={logo} />
-            <Text style={styles.thirdTitle}>Sobre Doação de Órgãos</Text>
-            <Text style={styles.thirdText}>
-              Um único doador que teve morte encefálica pode ajudar até dez pessoas que estão na fila de espera do transplante. É possível doar órgãos (coração, fígado, rins, pâncreas, pulmões e pele) e tecidos (ossos, córneas e medula óssea).
-            </Text>
+        <View style={styles.thirdView}>
+          <Image style={styles.imageLogo} source={logo} />
+          <Text style={styles.thirdTitle}>Sobre Doação de Órgãos</Text>
+          <Text style={styles.thirdText}>
+            Um único doador que teve morte encefálica pode ajudar até dez pessoas que estão na fila de espera do transplante. É possível doar órgãos (coração, fígado, rins, pâncreas, pulmões e pele) e tecidos (ossos, córneas e medula óssea).
+          </Text>
 
           <Image style={styles.thirdImage} source={imageCoracaoMao} />
         </View>
 
-          <View style={styles.forthView}>
-            <Image style={styles.imageLogo} source={logo} />
-            <Text style={styles.forthViewTitle}>Dados sobre:</Text>
-            <Image style={styles.imageFlor} source={imageFlor} />
-            <Image style={styles.imageBarras} source={imageGrafico} />
-            <Text style={styles.forthViewText}>
-              O Brasil é referência mundial na área de transplantes e possui o maior sistema público de transplantes do mundo. Em números absolutos, o Brasil é o 2º maior transplantador do mundo.
-            </Text>
-          </View>
+        <View style={styles.forthView}>
+          <Image style={styles.imageLogo} source={logo} />
+          <Text style={styles.forthViewTitle}>Dados sobre:</Text>
+          <Image style={styles.imageFlor} source={imageFlor} />
+          <Image style={styles.imageBarras} source={imageGrafico} />
+          <Text style={styles.forthViewText}>
+            O Brasil é referência mundial na área de transplantes e possui o maior sistema público de transplantes do mundo. Em números absolutos, o Brasil é o 2º maior transplantador do mundo.
+          </Text>
+        </View>
 
-          <View style={styles.fifthView}>
-            <Image style={styles.imageLogo} source={logo} />
-            <Text style={styles.fifthViewTitle}>Como Funciona</Text>
-            <Text style={styles.fifthText}>
-              É considerado como potencial doador, pacientes em morte cerebral.
-              No Brasil, este diagnóstico é definido por meio da Resolução CFM nº 1480/97, devendo ser registrado no prontuário do paciente um Termo de Declaração de Morte Encefálica, descrevendo todos os elementos do exame neurológico.
-            </Text>
+        <View style={styles.fifthView}>
+          <Image style={styles.imageLogo} source={logo} />
+          <Text style={styles.fifthViewTitle}>Como Funciona</Text>
+          <Text style={styles.fifthText}>
+            É considerado como potencial doador, pacientes em morte cerebral.
+            No Brasil, este diagnóstico é definido por meio da Resolução CFM nº 1480/97, devendo ser registrado no prontuário do paciente um Termo de Declaração de Morte Encefálica, descrevendo todos os elementos do exame neurológico.
+          </Text>
 
           <View style={styles.fifthViewImages}>
             <Image style={styles.imageHeart} source={imageCoracao} />
@@ -89,28 +89,27 @@ function TelasIniciais(props) {
           </View>
         </View>
 
-          <View style={styles.sixthView}>
-            <Image style={styles.imageLogo} source={logo} />
-            <Text style={styles.sixthViewTitle}>Nossa Rede Social</Text>
-            <Text style={styles.sixthViewText}>
-              Temos como objetivo facilitar o processo de doação de
-              orgãos por meio de interações reais de perfis médicos com
-              perfis de pessoas comuns. As pessoas poderão adicionar informações
-              médicas onde somente perfis médicos vão poder acessar.
-            </Text>
-            <View style={styles.nextPageView}>
-              <Image source={imageCelular} style={styles.imageCelular} />
-              <Text style={[styles.sixthViewTitle, styles.nextPageText]}>{'Entre ou \n cadastre-se já'}</Text>
-              <RectButton
-                style={styles.arrowIconRight}
-                activeOpacity={0}
-                onPress={() => this.handleNavigationToLogin()}
-              >
-                <View>
-                  <Icon name="arrow-right" color="#696969" size={60} />
-                </View>
-              </RectButton>
-            </View>
+        <View style={styles.sixthView}>
+          <Image style={styles.imageLogo} source={logo} />
+          <Text style={styles.sixthViewTitle}>Nossa Rede Social</Text>
+          <Text style={styles.sixthViewText}>
+            Temos como objetivo facilitar o processo de doação de
+            orgãos por meio de interações reais de perfis médicos com
+            perfis de pessoas comuns. As pessoas poderão adicionar informações
+            médicas onde somente perfis médicos vão poder acessar.
+          </Text>
+          <View style={styles.nextPageView}>
+            <Image source={imageCelular} style={styles.imageCelular} />
+            <Text style={[styles.sixthViewTitle, styles.nextPageText]}>{'Entre ou \n cadastre-se já'}</Text>
+            <RectButton
+              style={styles.arrowIconRight}
+              activeOpacity={0}
+              onPress={handleNavigationToCadastro}
+            >
+              <View>
+                <Icon name="arrow-right" color="#696969" size={60} />
+              </View>
+            </RectButton>
           </View>
         </View>
 

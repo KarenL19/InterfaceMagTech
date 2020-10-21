@@ -180,7 +180,7 @@ function TelaFeed({ navigation }) {
           )}
         />
       </View>
-      <Footer />
+      <Footer navigation={navigation} />
     </View>
   );
 }

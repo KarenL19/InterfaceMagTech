@@ -15,15 +15,22 @@ export default class HeaderWithIconsCG extends Component {
     navigation.navigate('TelasMensagens');
   }
 
+  handleNavigationToPerfil() {
+    const { navigation } = this.props;
+    navigation.navigate('Perfil');
+  }
+
   render() {
     return (
       <View>
         <StatusBar style="auto" />
         <View style={[Estilizacao.headerFooter, styles.headerWithIcon]}>
-          <Image
-            style={styles.imageArrowIcon}
-            source={iconArrowLeftBlue}
-          />
+          <TouchableOpacity onPress={() => this.handleNavigationToPerfil()}>
+            <Image
+              style={styles.imageArrowIcon}
+              source={iconArrowLeftBlue}
+            />
+          </TouchableOpacity>
           <Text style={styles.mainTitle}>CONFIGURAÇÕES GERAIS</Text>
           <View style={styles.backgroundIcon}>
             <Image

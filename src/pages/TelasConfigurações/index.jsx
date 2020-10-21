@@ -42,7 +42,7 @@ function PrimeiraTela({ navigation }) {
           </View>
 
         </View>
-        <Rodape />
+        <Rodape navigation={navigation} />
       </View>
 
     </View>

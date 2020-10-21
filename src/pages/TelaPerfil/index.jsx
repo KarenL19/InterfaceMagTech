@@ -16,10 +16,10 @@ import ModalBisturi from '../../components/ModalPerfilEditar';
 // Import styles
 import styles from './styles';
 
-function Perfil() {
+function Perfil({ navigation }) {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header navigation={navigation} />
       <View style={styles.body}>
         <ScrollView>
 
@@ -71,7 +71,7 @@ function Perfil() {
           </View>
         </ScrollView>
       </View>
-      <Footer />
+      <Footer navigation={navigation} />
     </View>
   );
 }

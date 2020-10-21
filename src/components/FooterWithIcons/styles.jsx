@@ -21,17 +21,6 @@ export default StyleSheet.create({
     marginTop: 5,
 
   },
-  backgroundHeaderIcone: {
-    height: 40,
-    width: 40,
-    backgroundColor: 'white',
-    borderColor: 'black',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginRight: 20,
-    marginTop: 40,
-
-  },
 
   backgroundFooterIcone: {
     height: 40,

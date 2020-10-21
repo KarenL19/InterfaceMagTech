@@ -14,11 +14,11 @@ import iconeAviao from '../../assets/icons/IconeMensagem.png';
 import fotoPerfil from '../../assets/icons/fotoPerfil.png';
 import iconeFiltro from '../../assets/icons/iconeFiltro.png';
 
-function TelaMensagem() {
+function TelaMensagem({ navigation }) {
   return (
     <View style={EstilizacaoMensagem.container}>
       <StatusBar style="auto" />
-      <Header />
+      <Header navigation={navigation} />
       <View style={EstilizacaoMensagem.body}>
         <View style={EstilizacaoMensagem.campoDePesquisa}>
 
@@ -240,7 +240,7 @@ function TelaMensagem() {
           </View>
         </View>
       </View>
-      <Footer />
+      <Footer navigation={navigation} />
     </View>
   );
 }

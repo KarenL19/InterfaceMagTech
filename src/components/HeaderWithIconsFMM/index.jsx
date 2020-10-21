@@ -14,12 +14,19 @@ function HeaderWithIcons(props) {
     navigation.navigate('TelasMensagens');
   }
 
+  function handleNavigationToPerfil() {
+    const { navigation } = props;
+    navigation.navigate('Perfil');
+  }
+
   return (
     <View style={[styles.headerFooter, styles.headerComIcones]}>
-      <Image
-        style={styles.imagemPerfilIcone}
-        source={iconePerfil}
-      />
+      <TouchableOpacity onPress={handleNavigationToPerfil}>
+        <Image
+          style={styles.imagemPerfilIcone}
+          source={iconePerfil}
+        />
+      </TouchableOpacity>
       <Text style={styles.tituloMensagensHeader}>Mensagens</Text>
       <View style={styles.backgroundHeaderIcone}>
         <Image
@@ -29,7 +36,7 @@ function HeaderWithIcons(props) {
       </View>
       <TouchableOpacity
         style={styles.backgroundHeaderIcone}
-        onPress={() => handleNavigationToMensagens()}
+        onPress={handleNavigationToMensagens}
       >
         <Image
           style={styles.imagemAviaoIcone}
